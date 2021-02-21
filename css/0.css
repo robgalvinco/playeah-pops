@@ -1,7 +1,7 @@
-#playeah-pops .modal-content {
+#playeah-pops .pp-modal-content {
     padding: 13px 16px;
 }
-#playeah-pops .modal-header .close {
+#playeah-pops .pp-modal-header .close {
     top: 17.5px;
     right: 7px;
 }
@@ -29,11 +29,11 @@
     background-color:{{color_cta_bg}};
 }
 @media only screen and (max-width: 575px) {
-    #playeah-pops .modal-content {
+    #playeah-pops .pp-modal-content {
         text-align: center;
         padding: 40px;
     }
-    playeah-pops .modal-header .close {
+    playeah-pops .pp-modal-header .close {
         top: 5px;
         right: 5px;
     }

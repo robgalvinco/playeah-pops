@@ -1,17 +1,19 @@
+window._playeah = {pops :[{"enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"mini","progress":1,"lottie":"https://assets10.lottiefiles.com/packages/lf20_1ILlx2.json","heading":"{{NAME}}, You are off to the races","copy":"","cta_text":"","cta_link":"","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false},{"enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"push","progress":25,"lottie":"https://assets9.lottiefiles.com/temp/lf20_2Mjp2m.json","heading":"{{NAME}},We are here for you","copy":"Don't worry if yu get stuck. There is a whole community waiting to help you make progress","cta_text":"Get help","cta_link":"https://ww.facebook.com","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false},{"enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"full","progress":100,"lottie":"https://assets8.lottiefiles.com/packages/lf20_UVDY7k.json","heading":"","copy":"","cta_text":"","cta_link":"","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false}]}
+
 /* plaYEAH PowerUp For Thinkific v(v1.0.6)
 https://powerups.thinkific.com/pages/playeah
 v1.0.4
 */
-(function () {
+//(function () {
     var pops = window._playeah.pops;
     console.log(pops);
     var _playeah_lottie = null;
     var _progress_start = -1;
     var _pops_css= [
-        '#playeah-pops .modal-content{padding:13px 16px;}#playeah-pops .modal-header .close{top:17.5px;right:7px;}#playeah-pops .popup-title{font-size:16px;line-height:1.07;margin-bottom:9px;}#playeah-pops .popup-text{font-size:14px;line-height:1;}#playeah-pops .btn{width:120px;height:36px;background-color:{{color_cta_bg}};color :{{color_cta_text}};font-size:14px;line-height:1;}#playeah-pops .btn:hover{opacity:.85;}#playeah-pops .btn:active{background-color:{{color_cta_bg}};}@media only screen and (max-width:575px){#playeah-pops .modal-content{text-align:center;padding:40px}playeah-pops .modal-header .close{top:5px;right:5px}#playeah-pops .col-md-auto{margin-bottom:30px}#playeah-pops .btn{margin-left:0!important}}'
+        '#playeah-pops .pp-modal-content{padding:13px 16px;}#playeah-pops .pp-modal-header .close{top:17.5px;right:7px;}#playeah-pops .popup-title{font-size:16px;line-height:1.07;margin-bottom:9px;}#playeah-pops .popup-text{font-size:14px;line-height:1;}#playeah-pops .btn{width:120px;height:36px;background-color:{{color_cta_bg}};color :{{color_cta_text}};font-size:14px;line-height:1;}#playeah-pops .btn:hover{opacity:.85;}#playeah-pops .btn:active{background-color:{{color_cta_bg}};}@media only screen and (max-width:575px){#playeah-pops .pp-modal-content{text-align:center;padding:40px}playeah-pops .pp-modal-header .close{top:5px;right:5px}#playeah-pops .col-md-auto{margin-bottom:30px}#playeah-pops .btn{margin-left:0!important}}'
     ];
     var _pops_html = [
-        '<div class="modal position-bottom-center fade m-width-570" id="playeah-pops" playeah-pops-show="bounceIn" playeah-pops-hide="bounceOut"><div class="modal-dialog"><div class="modal-content bg-white"><div class="modal-header"><button type="button" class="close close-dark" data-dismiss="modal"></button></div><div class="modal-body"><div class="col"><div class="row"><div class="col-md-auto col-sm-auto px-0 pop-media">{{media}} </div><div class="col-md-auto col-sm-auto align-self-center"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text mb-0 pop-subheading">{{subheading}}</p></div><div class="col align-self-center pop-cta-section"><a href="{{cta_link}}" class="btn ml-5 text-white b-radius-25 pop-cta">{{cta_text}}</a></div></div></div></div></div></div></div>'
+        '<div class="modal position-bottom-center fade m-width-570" id="playeah-pops" playeah-pops-show="bounceIn" playeah-pops-hide="bounceOut"><div class="modal-dialog"><div class="modal-content bg-white"><div class="modal-header"><button type="button" class="close close-dark" data-dismiss="modal"></button></div><div class="modal-body"><div class="col"><div class="row"><div class="col-md-auto col-sm-auto px-0 pop-media">{{media}} </div><div class="col-md-auto col-sm-auto align-self-center"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text mb-0 pop-subheading">{{subheading}}</p></div><div class="col align-self-center pop-cta-section"><a href="{{cta_link}}" class="btn ml-5 b-radius-25 pop-cta">{{cta_text}}</a></div></div></div></div></div></div></div>'
     ]
 
 
@@ -35,15 +37,17 @@ v1.0.4
         //get and replace CSS
         var css = "<style>"+_pops_css[pop_type]+"</style>";
         //replace color_cta_bg, color_cta_text
-        css = css.replace(/{{color_cta_bg}}/g,"#FF0000");
-        css = css.replace(/{{color_cta_text}}/g,"#FFFF00");
+        css = css.replace(/{{color_cta_bg}}/g,"#000000");
+        css = css.replace(/{{color_cta_text}}/g,"#FFFFFF");
         console.log("CSS",css);
 
-        var html = "<style>"+_pops_html[pop_type]+"</style>";
+        var html = _pops_html[pop_type];
+        var media = '<img src="http://placehold.it/52x52"/>';
         html = html.replace(/{{heading}}/g,"Pop Heading");
         html = html.replace(/{{subheading}}/g,"Pop Sub Heading");
         html = html.replace(/{{cta_link}}/g,"#somelink");
         html = html.replace(/{{cta_text}}/g,"Button text");
+        html = html.replace(/{{media}}/g,media);
         console.log("HTML",html);
 
         // inject any special CSS for any needed of hiding things
@@ -131,6 +135,10 @@ v1.0.4
         j.src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js";
         f.parentNode.insertBefore(j, f);
         
+        j3 = document.createElement("link");
+        j3.rel = "stylesheet";
+        j3.href = "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css";
+        f.parentNode.insertBefore(j3, f);
 
     }  
     const inject_animate= function(){
@@ -154,7 +162,7 @@ v1.0.4
 
 
     const inject_pops_css = function(){
-
+        var f = document.getElementsByTagName("script")[0];
         j3 = document.createElement("link");
         j3.rel = "stylesheet";
         j3.href = "https://cdn.jsdelivr.net/gh/robgalvinco/playeah-pops@latest/css/playeah-pops.css";
@@ -203,9 +211,10 @@ v1.0.4
             inject_fonts();
             inject_fa();
             inject_animate();
+            inject_bs();
+
             inject_pops_css();
             inject_lottie();
-            inject_bs();
             inject_html();
         
         
@@ -239,7 +248,7 @@ v1.0.4
         
         
     
-}());
+//}());
 
 
 
@@ -553,7 +562,7 @@ function ouibounce(el, custom_config) {
 
 
 
-
+/*
 jQuery(function($) {
     
     
@@ -924,7 +933,9 @@ jQuery(function($) {
     function timeOutShowModal(){
         timeoutshow.modal({show:true});
     }
-    
+   
+
+
     // Remove effect for a period of n days (expires: n)
     if (!Cookies.get('popup')) {
        window.setTimeout(function () {timeOutShowModal();}, ms); // Show modal after m seconds ({showModal();}, m)
@@ -937,5 +948,5 @@ jQuery(function($) {
 
 
 
-
+*/
  
