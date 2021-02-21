@@ -8,14 +8,15 @@
                 <div class="col">
                     <div class="row">
                         <div class="col-md-auto col-sm-auto px-0">
-                            <img src="{{img}}" srcset="./playeah-popss/images/logo@2x.png 2x" alt="" />
+                            {{lottie}}
+                            <img src="{{img}}" alt=""  class="pop-img"/>
                         </div>
                         <div class="col-md-auto col-sm-auto align-self-center">
-                            <div class="popup-title">{{heading}}</div>
-                            <p class="popup-text mb-0">{{subheading}}</p>
+                            <div class="popup-title pop-heading">{{heading}}</div>
+                            <p class="popup-text mb-0 pop-subheading">{{subheading}}</p>
                         </div>
-                        <div class="col align-self-center">
-                            <a href="{{cta_link}}" class="btn ml-5 text-white b-radius-25">{{cta_page}}</button>
+                        <div class="col align-self-center pop-cta-section">
+                            <a href="{{cta_link}}" class="btn ml-5 text-white b-radius-25 pop-cta">{{cta_page}}</a>
                         </div>
                     </div>
                 </div>       
