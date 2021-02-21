@@ -1,20 +1,20 @@
-#playeah-pops-3 .modal-content {
+#playeah-pops .modal-content {
     padding: 13px 16px;
 }
-#playeah-pops-3 .modal-header .close {
+#playeah-pops .modal-header .close {
     top: 17.5px;
     right: 7px;
 }
-#playeah-pops-3 .popup-title {
+#playeah-pops .popup-title {
     font-size: 16px;
     line-height: 1.07;
     margin-bottom: 9px;
 }
-#playeah-pops-3 .popup-text {
+#playeah-pops .popup-text {
     font-size: 14px;
     line-height: 1;
 }
-#playeah-pops-3 .btn {
+#playeah-pops .btn {
     width: 120px;
     height: 36px;
     background-color: {{color_cta_bg}};
@@ -22,25 +22,25 @@
     font-size: 14px;
     line-height: 1;
 }
-#playeah-pops-3 .btn:hover {
+#playeah-pops .btn:hover {
     opacity: .85;
 }
-#playeah-pops-3 .btn:active {
+#playeah-pops .btn:active {
     background-color:{{color_cta_bg}};
 }
 @media only screen and (max-width: 575px) {
-    #playeah-pops-3 .modal-content {
+    #playeah-pops .modal-content {
         text-align: center;
         padding: 40px;
     }
-    playeah-pops-3 .modal-header .close {
+    playeah-pops .modal-header .close {
         top: 5px;
         right: 5px;
     }
-    #playeah-pops-3 .col-md-auto {
+    #playeah-pops .col-md-auto {
         margin-bottom: 30px;
     }
-    #playeah-pops-3 .btn {
+    #playeah-pops .btn {
         margin-left: 0 !important;
     }
 }
