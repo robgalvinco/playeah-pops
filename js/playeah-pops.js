@@ -1,7 +1,7 @@
 window._playeah = {pops :[
-    {"media_type":"lottie","pop_type":16,"pop_img":"https://media.giphy.com/media/12SBwtRR9BnWg/giphy.gif","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"mini","progress":1,"lottie":"https://assets10.lottiefiles.com/packages/lf20_1ILlx2.json","heading":"{{NAME}}, You are off to the races","copy":"","cta_text":"","cta_link":"","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false},
-    {"media_type":"lottie","auto_close":0,"pop_type":16,"pop_img":"https://placehold.it/52x52","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"push","progress":25,"lottie":"https://assets9.lottiefiles.com/temp/lf20_2Mjp2m.json","heading":"{{NAME}},We are here for you","copy":"Don't worry if yu get stuck. There is a whole community waiting to help you make progress","cta_text":"Get help","cta_link":"https://ww.facebook.com","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false},
-    {"media_type":"lottie","auto_close":0,"pop_type":16,"pop_img":"https://source.unsplash.com/user/erondu/1600x900","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"full","progress":100,"lottie":"https://assets8.lottiefiles.com/packages/lf20_UVDY7k.json","heading":"A multi line heading which may be long","copy":"some really long copy that might span a few lines because people like to write a lof of bull shit","cta_text":"","cta_link":"","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false}]
+    {"media_type":"image","modal_type":0,"pop_img":"https://media.giphy.com/media/12SBwtRR9BnWg/giphy.gif","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"modal","progress":1,"lottie":"https://assets10.lottiefiles.com/packages/lf20_1ILlx2.json","heading":"{{NAME}}, You are off to the races","copy":"","cta_text":"","cta_link":"","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false},
+    {"media_type":"lottie","auto_close":0,"modal_type":2,"pop_img":"https://placehold.it/52x52","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"modal","progress":25,"lottie":"https://assets9.lottiefiles.com/temp/lf20_2Mjp2m.json","heading":"{{NAME}},We are here for you","copy":"Don't worry if yu get stuck. There is a whole community waiting to help you make progress","cta_text":"Get help","cta_link":"https://ww.facebook.com","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false},
+    {"media_type":"lottie","auto_close":0,"modal_type":16,"pop_img":"https://source.unsplash.com/user/erondu/1600x900","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"full","progress":100,"lottie":"https://assets8.lottiefiles.com/packages/lf20_UVDY7k.json","heading":"A multi line heading which may be long","copy":"some really long copy that might span a few lines because people like to write a lof of bull shit","cta_text":"","cta_link":"","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false}]
 }
 
 /* plaYEAH PowerUp For Thinkific v(v1.0.6)
@@ -33,23 +33,23 @@ v1.0.4
         '#playeah-pops .pp-modal-content{background-color:{{color_bg}};}#playeah-pops .pp-modal-header{padding-bottom:41px;padding-top:42px;}#playeah-pops .pp-modal-body{padding:0 38px 36px;}#playeah-pops .popup-title{line-height:22px;font-size:22px;margin-bottom:18px;color:{{color_heading}};}#playeah-pops .popup-text{line-height:22px;font-size:14px;color:{{color_copy}};}#playeah-pops .btn{height:46px;font-size:14px;line-height:33px;background-color:{{color_cta_bg}};color :{{color_cta_text}};}#playeah-pops .btn:hover{opacity:.85;}'
     ];
     var _pops_html = [
-        '<div class="modal position-bottom-center fade m-width-570" id="playeah-pops" playeah-pops-show="bounceIn" playeah-pops-hide="bounceOut"><div class="modal-dialog"><div class="pp-modal-content "><div class="pp-modal-header"><button type="button" class="close close-dark" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="col"><div class="row"><div class="col-md-auto col-sm-auto px-0 pop-media">{{media}} <img src="{{img_src}}" alt="" /></div><div class="col-md-auto col-sm-auto align-self-center col-copy"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text mb-0 pop-subheading">{{subheading}}</p></div><div class="col align-self-center pop-cta-section"><button data-href="{{cta_link}}" class="btn ml-5 b-radius-25 pop-cta">{{cta_text}}</button></div></div></div></div></div></div></div>',
-        '<div class="modal position-center-center fade m-width-370" id="playeah-pops" bite-show="zoomIn" bite-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header align-self-center pop-media"><button type="button" class="close close-dark" data-dismiss="modal"></button>{{media}} <img class="mb-4" src="{{img_src}}" srcset="" alt="" /></div><div class="pp-modal-body"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text mb-0 pop-heading">{{subheading}}</p></div></div></div></div>',
-        '<div class="modal position-bottom-right fade m-width-300" id="playeah-pops" playeah-pops-show="slideInUp" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-body"><div class="popup-title mb-3 pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><button data-href="{{cta_link}}" type="button" class="btn btn-block font-weight-bold pop-cta-section">{{cta_text}}</button></div></div></div></div>',
-        '<div class="modal fade position-bottom-right m-width-370" id="playeah-pops" playeah-pops-show="slideInUp" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header align-self-center pop-media"><button type="button" class="close close-light" data-dismiss="modal"></button>{{media}} <img class="popup-image" src="{{img_src}}" srcset="" alt="" /></div><div class="pp-modal-body"><div class="popup-title mb-5 pop-heading">{{heading}}</div><a href="{{cta_link}}" target="_blank" class="btn font-weight-bold pop-cta pop-cta-section">{{cta_text}}</a></div></div></div></div>',
-        '<div class="modal fade position-bottom-center m-width-770" id="playeah-pops" playeah-pops-show="slideInUp" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-header"><button type="button" class="close close-light" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="col"><div class="row"><div class="col-md-8 col-sm-12 px-0 align-self-center"><div class="popup-title mb-2 pop-heading">{{heading}}</div><p class="popup-text mb-0 pop-subheading">{{subheading}}</p></div><div class="col-md-4 col-sm-12 pr-0 align-self-center text-center pop-cta-section"><button data-href="{{cta_link}}" class="btn close font-weight-bold b-radius-30 pop-cta" >{{cta_text}}</button></div></div></div></div></div></div></div>',
-        '<div class="modal fade position-center-center m-width-300" id="playeah-pops" playeah-pops-show="slideInUp" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-body"><div class="col"><div class="row"><div class="col-md-auto px-0 pop-media">{{media}} <img src="{{img_src}}" alt="" /></div><div class="col pr-0 align-self-center"><p class="popup-text font-weight-light mb-0 pop-heading">{{heading}}</p></div></div></div></div><div class="pp-modal-footer pop-cta-section"><a class="btn btn-block font-weight-bold btn-link" href="{{cta_link}}" target="_blank">{{cta_text}}</a></div></div></div></div>',
-        '<div class="modal fade position-top-center m-width-300" id="playeah-pops" playeah-pops-show="slideInDown" playeah-pops-hide="slideOutUp"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header align-self-center"><button type="button" class="close close-light" data-dismiss="modal"></button>{{media}} <img class="mb-4" src="{{img_src}}" alt="" /></div><div class="pp-modal-body"><div class="popup-title mb-1 pop-heading">{{heading}}</div><p class="popup-text mb-4 pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn b-radius-25 font-weight-bold text-uppercase pop-cta pop-cta-section">{{cta_text}}</a></div></div></div></div>',
-        '<div class="modal fade position-center-center m-width-270" id="playeah-pops" playeah-pops-show="zoomIn" playeah-pops-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header"><button type="button" class="close close-dark" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="popup-title mb-4 pop-media">{{media}} <img src="{{img_src}}" alt="" /></div><p class="popup-text mb-4 pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn b-radius-30 font-weight-bold pop-cta pop-cta-section">{{cta_text}}</a></div></div></div></div>',
-        '<div class="modal fade position-center-center m-width-470" id="playeah-pops" playeah-pops-show="zoomIn" playeah-pops-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-body"><div class="col"><div class="row"><div class="col pl-0 pr-3"><div class="popup-inner"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><a href="{{cta_link}}" class="btn font-weight-bold pop-cta-section">{{cta_text}}</a></div></div><div class="col px-0"><div class="popup-image-inner pop-media">{{media}} <img class="position-absolute popup-image" src="{{img_src}}" alt="" /></div></div></div></div></div></div></div></div>',
-        '<div class="modal fade position-bottom-center m-width-500" id="playeah-pops" playeah-pops-show="bounceIn" playeah-pops-hide="bounceOut"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-header"><button type="button" class="close close-light" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="col"><div class="row"><div class="col-md-auto px-0"><div class="popup-image-inner pop-media">{{media}} <img class="popup-image position-absolute" src="{{img_src}}" alt="" /></div></div><div class="col px-0"><div class="popup-inner"><div class="popup-title mb-1 pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn font-weight-bold pop-cta pop-cta-section">{{cta_text}}</a></div></div></div></div></div></div></div></div>',
-        '<div class="modal fade position-bottom-center m-width-300" id="playeah-pops" playeah-pops-show="slideInUp" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="modal-header"><button type="button" class="close close-light" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="popup-title pop-heading">{{heading}}</div><div class="popup-image-inner pop-media">{{media}} <img class="popup-image position-absolute" src="{{img_src}}" alt="" /></div></div></div></div></div>',
-        '<div class="modal fade position-center-center m-width-640" id="playeah-pops" playeah-pops-show="zoomIn" playeah-pops-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-header"><button type="button" class="close close-light" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="col"><div class="row"><div class="col col-sm-8 pl-0 pr-3"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn font-weight-bold pop-cta pop-cta-section">{{cta_text}}</a></div><div class="col px-0"><div class="popup-image-inner"></div></div></div></div></div></div></div></div>',
-        '<div class="modal fade m-width-270 position-top-center" id="playeah-pops" playeah-pops-show="fadeIn" playeah-pops-hide="fadeOut"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="modal-header"><button type="button" class="close close-dark" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="popup-title text-black mb-3 pop-heading">{{heading}}</div><p class="popup-text text-black mb-0 pop-subheading">{{subheading}}</p></div><div class="pp-modal-footer justify-content-center"><p class="popup-text text-black mb-0">{{cta_text}}</p></div></div></div></div>',
-        '<div class="modal position-bottom-center fade m-width-470" id="playeah-pops" playeah-pops-show="slideInUp" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-header"><button type="button" class="close close-light" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="col"><div class="row"><div class="col order-last popup-inner"><div class="popup-title mb-1 pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn font-weight-bold transition-all pop-cta pop-cta-section">{{cta_text}}</a></div><div class="col-md-auto order-first popup-image-inner px-0 pop-media">{{media}} <img class="popup-image position-absolute" src="{{img_src}}" alt="" /></div></div></div></div></div></div></div>',
-        '<div class="modal position-center-center fade m-width-270" id="playeah-pops" playeah-pops-show="zoomIn" playeah-pops-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header align-self-center pop-media"><button type="button" class="close close-dark" data-dismiss="modal"></button>{{media}} <img src="{{img_src}}" alt="" /></div><div class="pp-modal-body"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text mb-0 pop-subheading">{{subheading}}</p></div><div class="pp-modal-footer justify-content-center pop-cta-section"><a href="{{cta_link}}" target="_blank" class="btn btn-block font-weight-bold btn-link pop-cta">{{cta_text}}</a></div></div></div></div>',
-        '<div class="modal fade m-width-370" id="playeah-pops" playeah-pops-show="fadeIn" playeah-pops-hide="fadeOut"><div class="modal-dialog"><div class="pp-modal-content "><div class="pp-modal-header position-relative pop-media"><button type="button" class="close close-light" data-dismiss="modal"></button>{{media}} <img src="{{img_src}}" alt="" /></div><div class="pp-modal-body text-center"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class=" pop-cta-section btn btn-second font-weight-bold ml-1 transition-all pop-cta">{{cta_text}}</a></div></div></div></div>',
-        '<div class="modal position-center-center fade m-width-370" id="playeah-pops" playeah-pops-show="zoomIn" playeah-pops-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header align-self-center pop-media"><button type="button" class="close close-dark" data-dismiss="modal"></button>{{media}} <img src="{{img_src}}" alt="" /></div><div class="pp-modal-body"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text mb-5 pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn btn-block text-white font-weight-bold pop-cta pop-cta-section">{{cta_text}}</a></div></div></div></div>'
+        '<div class="modal position-bottom-center animate__animated animate__bounceIn fade m-width-570" id="playeah-pops" playeah-pops-hide="bounceOut"><div class="modal-dialog"><div class="pp-modal-content "><div class="pp-modal-header"><button type="button" class="close close-dark" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="col"><div class="row"><div class="col-md-auto col-sm-auto px-0 pop-media">{{media}} <img src="{{img_src}}" alt="" /></div><div class="col-md-auto col-sm-auto align-self-center col-copy"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text mb-0 pop-subheading">{{subheading}}</p></div><div class="col align-self-center pop-cta-section"><button data-href="{{cta_link}}" class="btn ml-5 b-radius-25 pop-cta">{{cta_text}}</button></div></div></div></div></div></div></div>',
+        '<div class="modal position-center-center animate__animated animate__zoomIn fade m-width-370" id="playeah-pops" playeah-pops-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header align-self-center pop-media"><button type="button" class="close close-dark" data-dismiss="modal"></button>{{media}} <img class="mb-4" src="{{img_src}}" srcset="" alt="" /></div><div class="pp-modal-body"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text mb-0 pop-heading">{{subheading}}</p></div></div></div></div>',
+        '<div class="modal position-bottom-right animate__animated animate__slideInUp fade m-width-300" id="playeah-pops" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-body"><div class="popup-title mb-3 pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><button data-href="{{cta_link}}" type="button" class="btn btn-block font-weight-bold pop-cta-section">{{cta_text}}</button></div></div></div></div>',
+        '<div class="modal fade position-bottom-right animate__animated animate__slideInUp m-width-370" id="playeah-pops" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header align-self-center pop-media"><button type="button" class="close close-light" data-dismiss="modal"></button>{{media}} <img class="popup-image" src="{{img_src}}" srcset="" alt="" /></div><div class="pp-modal-body"><div class="popup-title mb-5 pop-heading">{{heading}}</div><a href="{{cta_link}}" target="_blank" class="btn font-weight-bold pop-cta pop-cta-section">{{cta_text}}</a></div></div></div></div>',
+        '<div class="modal fade position-bottom-center animate__animated animate__slideInUp m-width-770" id="playeah-pops" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-header"><button type="button" class="close close-light" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="col"><div class="row"><div class="col-md-8 col-sm-12 px-0 align-self-center"><div class="popup-title mb-2 pop-heading">{{heading}}</div><p class="popup-text mb-0 pop-subheading">{{subheading}}</p></div><div class="col-md-4 col-sm-12 pr-0 align-self-center text-center pop-cta-section"><button data-href="{{cta_link}}" class="btn close font-weight-bold b-radius-30 pop-cta" >{{cta_text}}</button></div></div></div></div></div></div></div>',
+        '<div class="modal fade position-center-center animate__animated animate__slideInUp m-width-300" id="playeah-pops" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-body"><div class="col"><div class="row"><div class="col-md-auto px-0 pop-media">{{media}} <img src="{{img_src}}" alt="" /></div><div class="col pr-0 align-self-center"><p class="popup-text font-weight-light mb-0 pop-heading">{{heading}}</p></div></div></div></div><div class="pp-modal-footer pop-cta-section"><a class="btn btn-block font-weight-bold btn-link" href="{{cta_link}}" target="_blank">{{cta_text}}</a></div></div></div></div>',
+        '<div class="modal fade position-top-center animate__animated animate__slideInDown m-width-300" id="playeah-pops" playeah-pops-hide="slideOutUp"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header align-self-center"><button type="button" class="close close-light" data-dismiss="modal"></button>{{media}} <img class="mb-4" src="{{img_src}}" alt="" /></div><div class="pp-modal-body"><div class="popup-title mb-1 pop-heading">{{heading}}</div><p class="popup-text mb-4 pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn b-radius-25 font-weight-bold text-uppercase pop-cta pop-cta-section">{{cta_text}}</a></div></div></div></div>',
+        '<div class="modal fade position-center-center animate__animated animate__zoomIn m-width-270" id="playeah-pops" playeah-pops-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header"><button type="button" class="close close-dark" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="popup-title mb-4 pop-media">{{media}} <img src="{{img_src}}" alt="" /></div><p class="popup-text mb-4 pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn b-radius-30 font-weight-bold pop-cta pop-cta-section">{{cta_text}}</a></div></div></div></div>',
+        '<div class="modal fade position-center-center animate__animated animate__zoomIn m-width-470" id="playeah-pops" playeah-pops-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-body"><div class="col"><div class="row"><div class="col pl-0 pr-3"><div class="popup-inner"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><a href="{{cta_link}}" class="btn font-weight-bold pop-cta-section">{{cta_text}}</a></div></div><div class="col px-0"><div class="popup-image-inner pop-media">{{media}} <img class="position-absolute popup-image" src="{{img_src}}" alt="" /></div></div></div></div></div></div></div></div>',
+        '<div class="modal fade position-bottom-center animate__animated animate__bounceIn m-width-500" id="playeah-pops" playeah-pops-hide="bounceOut"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-header"><button type="button" class="close close-light" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="col"><div class="row"><div class="col-md-auto px-0"><div class="popup-image-inner pop-media">{{media}} <img class="popup-image position-absolute" src="{{img_src}}" alt="" /></div></div><div class="col px-0"><div class="popup-inner"><div class="popup-title mb-1 pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn font-weight-bold pop-cta pop-cta-section">{{cta_text}}</a></div></div></div></div></div></div></div></div>',
+        '<div class="modal fade position-bottom-center m-width-300 animate__animated animate__slideInUp" id="playeah-pops" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="modal-header"><button type="button" class="close close-light" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="popup-title pop-heading">{{heading}}</div><div class="popup-image-inner pop-media">{{media}} <img class="popup-image position-absolute" src="{{img_src}}" alt="" /></div></div></div></div></div>',
+        '<div class="modal fade position-center-center m-width-640 animate__animated animate__zoomIn" id="playeah-pops" playeah-pops-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-header"><button type="button" class="close close-light" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="col"><div class="row"><div class="col col-sm-8 pl-0 pr-3"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn font-weight-bold pop-cta pop-cta-section">{{cta_text}}</a></div><div class="col px-0"><div class="popup-image-inner"></div></div></div></div></div></div></div></div>',
+        '<div class="modal fade m-width-270 position-top-center animate__animated animate__fadeIn" id="playeah-pops" playeah-pops-hide="fadeOut"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="modal-header"><button type="button" class="close close-dark" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="popup-title text-black mb-3 pop-heading">{{heading}}</div><p class="popup-text text-black mb-0 pop-subheading">{{subheading}}</p></div><div class="pp-modal-footer justify-content-center"><p class="popup-text text-black mb-0">{{cta_text}}</p></div></div></div></div>',
+        '<div class="modal position-bottom-center fade m-width-470 animate__animated animate__slideInUp" id="playeah-pops" playeah-pops-hide="slideOutDown"><div class="modal-dialog"><div class="pp-modal-content"><div class="pp-modal-header"><button type="button" class="close close-light" data-dismiss="modal"></button></div><div class="pp-modal-body"><div class="col"><div class="row"><div class="col order-last popup-inner"><div class="popup-title mb-1 pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn font-weight-bold transition-all pop-cta pop-cta-section">{{cta_text}}</a></div><div class="col-md-auto order-first popup-image-inner px-0 pop-media">{{media}} <img class="popup-image position-absolute" src="{{img_src}}" alt="" /></div></div></div></div></div></div></div>',
+        '<div class="modal position-center-center fade m-width-270 animate__animated animate__zoomIn" id="playeah-pops" playeah-pops-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header align-self-center pop-media"><button type="button" class="close close-dark" data-dismiss="modal"></button>{{media}} <img src="{{img_src}}" alt="" /></div><div class="pp-modal-body"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text mb-0 pop-subheading">{{subheading}}</p></div><div class="pp-modal-footer justify-content-center pop-cta-section"><a href="{{cta_link}}" target="_blank" class="btn btn-block font-weight-bold btn-link pop-cta">{{cta_text}}</a></div></div></div></div>',
+        '<div class="modal fade m-width-370 animate__animated animate__fadeIn" id="playeah-pops" playeah-pops-hide="fadeOut"><div class="modal-dialog"><div class="pp-modal-content "><div class="pp-modal-header position-relative pop-media"><button type="button" class="close close-light" data-dismiss="modal"></button>{{media}} <img src="{{img_src}}" alt="" /></div><div class="pp-modal-body text-center"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class=" pop-cta-section btn btn-second font-weight-bold ml-1 transition-all pop-cta">{{cta_text}}</a></div></div></div></div>',
+        '<div class="modal position-center-center fade m-width-370 animate__animated animate__zoomIn" id="playeah-pops" playeah-pops-hide="zoomOut"><div class="modal-dialog"><div class="pp-modal-content text-center"><div class="pp-modal-header align-self-center pop-media"><button type="button" class="close close-dark" data-dismiss="modal"></button>{{media}} <img src="{{img_src}}" alt="" /></div><div class="pp-modal-body"><div class="popup-title pop-heading">{{heading}}</div><p class="popup-text mb-5 pop-subheading">{{subheading}}</p><a href="{{cta_link}}" target="_blank" class="btn btn-block text-white font-weight-bold pop-cta pop-cta-section">{{cta_text}}</a></div></div></div></div>'
     ]
 
 
@@ -64,14 +64,11 @@ v1.0.4
         win.focus();        
     }
 
-    const show_pop = function(index){
-        var pop = pops[index];
-        var pop_type = pop.pop_type; //TBD replace with cofog from obj
+    const show_pop_modal = function (pop){
+        var modal_type = pop.modal_type; //TBD replace with cofog from obj
 
-        console.log(pop);
-        
         //get and replace CSS
-        var css = "<style>"+_pops_css[pop_type]+"</style>";
+        var css = "<style>"+_pops_css[modal_type]+"</style>";
         //replace color_cta_bg, color_cta_text
         css = css.replace(/{{color_cta_bg}}/g,pop.color_cta_bg);
         css = css.replace(/{{color_cta_text}}/g,pop.color_cta_text);
@@ -81,7 +78,7 @@ v1.0.4
         css = css.replace(/{{img_src}}/g,pop.pop_img); //background images
         console.log("CSS",css);
 
-        var html = _pops_html[pop_type];
+        var html = _pops_html[modal_type];
         html = html.replace(/{{heading}}/g,pop.heading).replace(/{{NAME}}/g,Thinkific.current_user.first_name);
         html = html.replace(/{{subheading}}/g,pop.copy).replace(/{{NAME}}/g,Thinkific.current_user.first_name);;
         html = html.replace(/{{cta_link}}/g,pop.cta_link);
@@ -107,7 +104,7 @@ v1.0.4
 
         //load all into container
         $('#playeah-pop-container').html(css+html);
-
+        modalAnimations();
         //open pop
         $('#playeah-pops').modal({show:true})
 
@@ -116,6 +113,24 @@ v1.0.4
             setTimeout(function() {$('#playeah-pops').modal('hide');}, (pop.auto_close*1000));
         }
         //setTimeout(function() {$('#playeah-pops').modal('hide');}, 4000);
+    }
+    const show_pop = function(index){
+        var pop = pops[index];
+        
+        console.log(pop);
+        if(pop.type=="full"){
+            _playeah_lottie=document.querySelector("#playeah-fs");
+            _playeah_lottie.addEventListener('complete', hide_fs_lottie);
+    
+            $("#playeah-fs").show();
+            _playeah_lottie.load(pop.lottie);
+            pops[index].played = true;            
+        } 
+        if(pop.type=="modal"){
+            show_pop_modal(pop);            
+        }
+        
+
 
     }        
 
@@ -201,7 +216,7 @@ v1.0.4
 
         j3 = document.createElement("link");
         j3.rel = "stylesheet";
-        j3.href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css";
+        j3.href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
         f.parentNode.insertBefore(j3, f);
 
     }  
@@ -211,6 +226,8 @@ v1.0.4
     const inject_html= function(){
     console.log("injecting html");
     var html = '<div id="playeah-pop-container"></div>';
+        html += '<style>#playeah-fs{display:none;}</style><lottie-player id="playeah-fs" background="transparent" speed="1" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 9999999999;" autoplay=""></lottie-player>';
+    
     $("body").append(html);       
 
     }
@@ -235,12 +252,12 @@ v1.0.4
     const find_and_play = function(progress, courseid){
         console.log(progress,courseid);
         var __allcourses_index = pops.findIndex(function(pop, index) {
-        if(pop.id == "all" && pop.progress<=progress  && !pop.played)
+        if(pop.id == "all" && pop.progress<=progress  && !pop.progress_met)
             return true;
         });     
         console.log("all index: "+__allcourses_index);  
         var __courses_index = pops.findIndex(function(pop, index) {
-            if(pop.courses.contains(courseid)  && pop.progress<=progress  && !pop.played)
+            if(pop.courses.contains(courseid)  && pop.progress<=progress  && !pop.progress_met)
                 return true;
         }); 
         console.log("course index: "+__courses_index);
@@ -248,11 +265,11 @@ v1.0.4
                 show_pop(__courses_index);
                 //make sure the "all" one with same progress does not play
                 __allcourses_index = pops.findIndex(function(pop, index) {
-                    if(pop.id == "all" && pop.progress==progress  && !pop.played)
+                    if(pop.id == "all" && pop.progress==progress  && !pop.progress_met)
                         return true;
                 }); 
                 if(__allcourses_index != -1){
-                    pops[__allcourses_index].played=true;
+                    pops[__allcourses_index].progress_met=true;
                 }
         
         }  else {
@@ -261,6 +278,345 @@ v1.0.4
             }
         }
     }
+
+    // animations
+    
+    const modalAnim = function (x) {
+        $('.modal .modal-dialog').attr('class', 'modal-dialog ' + x + ' animated');
+    }; 
+    
+    const modalAnimations = function(){
+        $('.modal').each(function(index){
+            if ($(this).attr('playeah-pop-show') == 'fadeIn') {
+                $(this).on('show.bs.modal', function (e) {
+                      modalAnim('fadeIn');
+                });
+            }
+            
+            if ($(this).attr('playeah-pop-hide') == 'fadeOut') {
+                $(this).on('hide.bs.modal', function (e) {
+                      modalAnim('fadeOut');
+                });
+            }
+            
+            if ($(this).attr('playeah-pop-show') == 'zoomIn') {
+                $(this).on('show.bs.modal', function (e) {
+                      modalAnim('zoomIn');
+                });
+            }
+            
+            if ($(this).attr('playeah-pop-hide') == 'zoomOut') {
+                $(this).on('hide.bs.modal', function (e) {
+                      modalAnim('zoomOut');
+                });
+            }
+            
+            if ($(this).attr('playeah-pop-show') == 'bounceIn') {
+                $(this).on('show.bs.modal', function (e) {
+                      modalAnim('bounceIn');
+                });
+            }
+            
+            if ($(this).attr('playeah-pop-hide') == 'bounceOut') {
+                $(this).on('hide.bs.modal', function (e) {
+                      modalAnim('bounceOut');
+                });
+            }
+            
+            if ($(this).attr('playeah-pop-show') == 'slideInDown') {
+                $(this).on('show.bs.modal', function (e) {
+                      modalAnim('slideInDown');
+                });
+            }
+            
+            if ($(this).attr('playeah-pop-hide') == 'slideOutUp') {
+                $(this).on('hide.bs.modal', function (e) {
+                      modalAnim('slideOutUp');
+                });
+            }
+            
+            if ($(this).attr('playeah-pop-show') == 'slideInUp') {
+                $(this).on('show.bs.modal', function (e) {
+                      modalAnim('slideInUp');
+                });
+            }
+            
+            if ($(this).attr('playeah-pop-hide') == 'slideOutDown') {
+                $(this).on('hide.bs.modal', function (e) {
+                      modalAnim('slideOutDown');
+                });
+            }
+            
+            if ($(this).attr('playeah-pop-show') == 'slideInRight') {
+                $(this).on('show.bs.modal', function (e) {
+                      modalAnim('slideInRight');
+                });
+            }
+            
+            if ($(this).attr('playeah-pop-hide') == 'slideOutRight') {
+                $(this).on('hide.bs.modal', function (e) {
+                      modalAnim('slideOutRight');
+                });
+            }
+        });
+        
+        if (jQuery(window).width() <= 1024) {
+            $('.modal').each(function(){
+                if($(this).hasClass('position-bottom-left') && $(this).attr('playeah-pop-show') == 'slideInUp') {
+                    $(this).on('show.bs.modal', function (e) {
+                          modalAnim('fadeIn');
+                    });
+                }
+                if($(this).hasClass('position-bottom-left') && $(this).attr('playeah-pop-hide') == 'slideOutDown') {
+                    $(this).on('hide.bs.modal', function (e) {
+                          modalAnim('fadeOut');
+                    });
+                }
+            });
+    
+            $('.modal').each(function(){
+                if($(this).hasClass('position-bottom-right') && $(this).attr('playeah-pop-show') == 'slideInUp') {
+                    $(this).on('show.bs.modal', function (e) {
+                          modalAnim('fadeIn');
+                    });
+                }
+                if($(this).hasClass('position-bottom-right') && $(this).attr('playeah-pop-hide') == 'slideOutDown') {
+                    $(this).on('hide.bs.modal', function (e) {
+                          modalAnim('fadeOut');
+                    });
+                }
+            });
+            $('.modal').each(function(){
+                if($(this).hasClass('position-bottom-center') && $(this).attr('playeah-pop-show') == 'slideInUp') {
+                    $(this).on('show.bs.modal', function (e) {
+                          modalAnim('fadeIn');
+                    });
+                }
+                if($(this).hasClass('position-bottom-center') && $(this).attr('playeah-pop-hide') == 'slideOutDown') {
+                    $(this).on('hide.bs.modal', function (e) {
+                          modalAnim('fadeOut');
+                    });
+                }
+            });
+            
+    
+            
+        }
+        
+        $('.modal').each(function(){
+            $(this).on('show.bs.modal', function (e) {
+                if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-top-right')) {
+                    $(this).css({
+                        'right': '0',
+                        'left': 'auto',
+                        'margin-left': '0',
+                        'margin-top': '0',
+                        'padding-right': '0',
+                        'top': '0',
+                        'bottom': 'auto'
+                    });
+                    $('body').addClass('modal-open-no-backdrop');
+                }
+            });
+            $(this).on('hide.bs.modal', function (e) {
+                var bodyDefault = setTimeout(function(){
+                    $('body').removeClass('modal-open-no-backdrop');
+                }, 1000);
+            });
+        });
+    
+    
+        $('.modal').each(function(){
+            $(this).on('show.bs.modal', function (e) {
+                if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-top-left')) {
+                    $(this).css({
+                        'right': 'auto',
+                        'left': '0',
+                        'margin-left': '0',
+                        'margin-top': '0',
+                        'padding-right': '0',
+                        'top': '0',
+                        'bottom': 'auto'
+                    });
+                    $('body').addClass('modal-open-no-backdrop');
+                }
+            });
+            $(this).on('hide.bs.modal', function (e) {
+                var bodyDefault = setTimeout(function(){
+                    $('body').removeClass('modal-open-no-backdrop');
+                }, 1000);
+            });
+        });
+    
+        $('.modal').each(function(){
+            $(this).on('show.bs.modal', function (e) {
+                if($(this).attr('data-backdrop') == 'false') {
+                    var modalWidth = $(this).find('.modal-dialog').css('max-width').slice(0,-2);
+                    $(this).css({
+                        'right': 'auto',
+                        'left': '50%',
+                        'margin-left': '-' + (modalWidth/2) + 'px',
+                        'margin-top': '0',
+                        'padding-right': '0',
+                        'top': '0',
+                        'bottom': 'auto'
+                    });
+                    $('body').addClass('modal-open-no-backdrop');
+                }
+            });
+            $(this).on('hide.bs.modal', function (e) {
+                var bodyDefault = setTimeout(function(){
+                    $('body').removeClass('modal-open-no-backdrop');
+                }, 1000);
+            });
+        });
+    
+        $('.modal').each(function(){
+            $(this).on('show.bs.modal', function (e) {
+                if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-center-left')) {
+                    var modalHeight = $(this).css('height').slice(0,-2);
+                    $(this).css({
+                        'right': 'auto',
+                        'left': '0',
+                        'margin-left': '0',
+                        'margin-top': '-' + (modalHeight/2) + 'px',
+                        'padding-right': '0',
+                        'top': '50%',
+                        'bottom': 'auto'
+                    });
+                    $('body').addClass('modal-open-no-backdrop');
+                }
+            });
+            $(this).on('hide.bs.modal', function (e) {
+                var bodyDefault = setTimeout(function(){
+                    $('body').removeClass('modal-open-no-backdrop');
+                }, 1000);
+            });
+        });
+    
+    
+        $('.modal').each(function(){
+            $(this).on('show.bs.modal', function (e) {
+                if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-center-right')) {
+                    var modalHeight = $(this).css('height').slice(0,-2);
+                    $(this).css({
+                        'right': '0',
+                        'left': 'auto',
+                        'margin-left': '0',
+                        'margin-top': '-' + (modalHeight/2) + 'px',
+                        'padding-right': '0',
+                        'top': '50%',
+                        'bottom': 'auto'
+                    });
+                    $('body').addClass('modal-open-no-backdrop');
+                }
+            });
+            $(this).on('hide.bs.modal', function (e) {
+                var bodyDefault = setTimeout(function(){
+                    $('body').removeClass('modal-open-no-backdrop');
+                }, 1000);
+            });
+        });
+    
+        $('.modal').each(function(){
+            $(this).on('show.bs.modal', function (e) {
+                if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-center-center')) {
+                    var modalWidth = $(this).find('.modal-dialog').css('max-width').slice(0,-2);
+                    var modalHeight = $(this).css('height').slice(0,-2);
+                    $(this).css({
+                        'right': 'auto',
+                        'left': '50%',
+                        'margin-left': '-' + (modalWidth/2) + 'px',
+                        'margin-top': '-' + (modalHeight/2) + 'px',
+                        'padding-right': '0',
+                        'top': '50%',
+                        'bottom': 'auto'
+                    });
+                    $('body').addClass('modal-open-no-backdrop');
+                }
+            });
+            $(this).on('hide.bs.modal', function (e) {
+                var bodyDefault = setTimeout(function(){
+                    $('body').removeClass('modal-open-no-backdrop');
+                }, 1000);
+            });
+        });
+    
+    
+        $('.modal').each(function(){
+            $(this).on('show.bs.modal', function (e) {
+                if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-bottom-right')) {
+                    $(this).css({
+                        'right': '0',
+                        'left': 'auto',
+                        'margin-left': '0',
+                        'margin-top': '0',
+                        'padding-right': '0',
+                        'top': 'auto',
+                        'bottom': '0'
+                    });
+                    $('body').addClass('modal-open-no-backdrop');
+                }
+            });
+            $(this).on('hide.bs.modal', function (e) {
+                var bodyDefault = setTimeout(function(){
+                    $('body').removeClass('modal-open-no-backdrop');
+                }, 1000);
+            });
+        });
+    
+        $('.modal').each(function(){
+            $(this).on('show.bs.modal', function (e) {
+                if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-bottom-left')) {
+                    $(this).css({
+                        'right': 'auto',
+                        'left': '0',
+                        'margin-left': '0',
+                        'margin-top': '0',
+                        'padding-right': '0',
+                        'top': 'auto',
+                        'bottom': '0'
+                    });
+                    $('body').addClass('modal-open-no-backdrop');
+                }
+            });
+            $(this).on('hide.bs.modal', function (e) {
+                var bodyDefault = setTimeout(function(){
+                    $('body').removeClass('modal-open-no-backdrop');
+                }, 1000);
+            });
+        });
+    
+        $('.modal').each(function(){
+            $(this).on('show.bs.modal', function (e) {
+                if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-bottom-center')) {
+                    var modalWidth = $(this).find('.modal-dialog').css('max-width').slice(0,-2);
+                    $(this).css({
+                        'right': 'auto',
+                        'left': '50%',
+                        'margin-left': '-' + (modalWidth/2) + 'px',
+                        'margin-top': '0',
+                        'padding-right': '0',
+                        'top': 'auto',
+                        'bottom': '0'
+                    });
+                    $('body').addClass('modal-open-no-backdrop');
+                }
+            });
+            $(this).on('hide.bs.modal', function (e) {
+                var bodyDefault = setTimeout(function(){
+                    $('body').removeClass('modal-open-no-backdrop');
+                }, 1000);
+            });
+        });
+    
+    
+
+    }
+
+
+
+
     $( document ).ready(function() {
         if(typeof(CoursePlayerV2) !== 'undefined') {
             inject_fonts();
@@ -271,7 +627,7 @@ v1.0.4
             inject_pops_css();
             inject_lottie();
             inject_html();
-        
+            inject_uikit();
         
             CoursePlayerV2.on('hooks:contentDidChange', function(data) {
                 console.log(data);
@@ -279,10 +635,10 @@ v1.0.4
                     console.log("Setting default");
                     _progress_start = data.enrollment.percentage_completed*100;
                     console.log("start: "+_progress_start)
-                    //mark pops played if progress is >0
+                    //mark pops progress_met if progress is >0
                     for (i = 0; i < pops.length; i++) {
                         if(pops[i].progress <= _progress_start){
-                            pops[i].played=true;
+                            pops[i].progress_met=true;
                         }
                     }                
                 }
@@ -623,335 +979,6 @@ jQuery(function($) {
     
 
     
-    // animations
-    
-    function modalAnim(x) {
-        $('.modal .modal-dialog').attr('class', 'modal-dialog ' + x + ' animated');
-    }; 
-    
-    $('.modal').each(function(index){
-        if ($(this).attr('playeah-pop-show') == 'fadeIn') {
-            $(this).on('show.bs.modal', function (e) {
-                  modalAnim('fadeIn');
-            });
-        }
-        
-        if ($(this).attr('playeah-pop-hide') == 'fadeOut') {
-            $(this).on('hide.bs.modal', function (e) {
-                  modalAnim('fadeOut');
-            });
-        }
-        
-        if ($(this).attr('playeah-pop-show') == 'zoomIn') {
-            $(this).on('show.bs.modal', function (e) {
-                  modalAnim('zoomIn');
-            });
-        }
-        
-        if ($(this).attr('playeah-pop-hide') == 'zoomOut') {
-            $(this).on('hide.bs.modal', function (e) {
-                  modalAnim('zoomOut');
-            });
-        }
-        
-        if ($(this).attr('playeah-pop-show') == 'bounceIn') {
-            $(this).on('show.bs.modal', function (e) {
-                  modalAnim('bounceIn');
-            });
-        }
-        
-        if ($(this).attr('playeah-pop-hide') == 'bounceOut') {
-            $(this).on('hide.bs.modal', function (e) {
-                  modalAnim('bounceOut');
-            });
-        }
-        
-        if ($(this).attr('playeah-pop-show') == 'slideInDown') {
-            $(this).on('show.bs.modal', function (e) {
-                  modalAnim('slideInDown');
-            });
-        }
-        
-        if ($(this).attr('playeah-pop-hide') == 'slideOutUp') {
-            $(this).on('hide.bs.modal', function (e) {
-                  modalAnim('slideOutUp');
-            });
-        }
-        
-        if ($(this).attr('playeah-pop-show') == 'slideInUp') {
-            $(this).on('show.bs.modal', function (e) {
-                  modalAnim('slideInUp');
-            });
-        }
-        
-        if ($(this).attr('playeah-pop-hide') == 'slideOutDown') {
-            $(this).on('hide.bs.modal', function (e) {
-                  modalAnim('slideOutDown');
-            });
-        }
-        
-        if ($(this).attr('playeah-pop-show') == 'slideInRight') {
-            $(this).on('show.bs.modal', function (e) {
-                  modalAnim('slideInRight');
-            });
-        }
-        
-        if ($(this).attr('playeah-pop-hide') == 'slideOutRight') {
-            $(this).on('hide.bs.modal', function (e) {
-                  modalAnim('slideOutRight');
-            });
-        }
-    });
-    
-    if (jQuery(window).width() <= 1024) {
-        $('.modal').each(function(){
-            if($(this).hasClass('position-bottom-left') && $(this).attr('playeah-pop-show') == 'slideInUp') {
-                $(this).on('show.bs.modal', function (e) {
-                      modalAnim('fadeIn');
-                });
-            }
-            if($(this).hasClass('position-bottom-left') && $(this).attr('playeah-pop-hide') == 'slideOutDown') {
-                $(this).on('hide.bs.modal', function (e) {
-                      modalAnim('fadeOut');
-                });
-            }
-        });
-
-        $('.modal').each(function(){
-            if($(this).hasClass('position-bottom-right') && $(this).attr('playeah-pop-show') == 'slideInUp') {
-                $(this).on('show.bs.modal', function (e) {
-                      modalAnim('fadeIn');
-                });
-            }
-            if($(this).hasClass('position-bottom-right') && $(this).attr('playeah-pop-hide') == 'slideOutDown') {
-                $(this).on('hide.bs.modal', function (e) {
-                      modalAnim('fadeOut');
-                });
-            }
-        });
-        $('.modal').each(function(){
-            if($(this).hasClass('position-bottom-center') && $(this).attr('playeah-pop-show') == 'slideInUp') {
-                $(this).on('show.bs.modal', function (e) {
-                      modalAnim('fadeIn');
-                });
-            }
-            if($(this).hasClass('position-bottom-center') && $(this).attr('playeah-pop-hide') == 'slideOutDown') {
-                $(this).on('hide.bs.modal', function (e) {
-                      modalAnim('fadeOut');
-                });
-            }
-        });
-        
-
-        
-    }
-    
-    $('.modal').each(function(){
-        $(this).on('show.bs.modal', function (e) {
-            if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-top-right')) {
-                $(this).css({
-                    'right': '0',
-                    'left': 'auto',
-                    'margin-left': '0',
-                    'margin-top': '0',
-                    'padding-right': '0',
-                    'top': '0',
-                    'bottom': 'auto'
-                });
-                $('body').addClass('modal-open-no-backdrop');
-            }
-        });
-        $(this).on('hide.bs.modal', function (e) {
-            var bodyDefault = setTimeout(function(){
-                $('body').removeClass('modal-open-no-backdrop');
-            }, 1000);
-        });
-    });
-
-
-    $('.modal').each(function(){
-        $(this).on('show.bs.modal', function (e) {
-            if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-top-left')) {
-                $(this).css({
-                    'right': 'auto',
-                    'left': '0',
-                    'margin-left': '0',
-                    'margin-top': '0',
-                    'padding-right': '0',
-                    'top': '0',
-                    'bottom': 'auto'
-                });
-                $('body').addClass('modal-open-no-backdrop');
-            }
-        });
-        $(this).on('hide.bs.modal', function (e) {
-            var bodyDefault = setTimeout(function(){
-                $('body').removeClass('modal-open-no-backdrop');
-            }, 1000);
-        });
-    });
-
-    $('.modal').each(function(){
-        $(this).on('show.bs.modal', function (e) {
-            if($(this).attr('data-backdrop') == 'false') {
-                var modalWidth = $(this).find('.modal-dialog').css('max-width').slice(0,-2);
-                $(this).css({
-                    'right': 'auto',
-                    'left': '50%',
-                    'margin-left': '-' + (modalWidth/2) + 'px',
-                    'margin-top': '0',
-                    'padding-right': '0',
-                    'top': '0',
-                    'bottom': 'auto'
-                });
-                $('body').addClass('modal-open-no-backdrop');
-            }
-        });
-        $(this).on('hide.bs.modal', function (e) {
-            var bodyDefault = setTimeout(function(){
-                $('body').removeClass('modal-open-no-backdrop');
-            }, 1000);
-        });
-    });
-
-    $('.modal').each(function(){
-        $(this).on('show.bs.modal', function (e) {
-            if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-center-left')) {
-                var modalHeight = $(this).css('height').slice(0,-2);
-                $(this).css({
-                    'right': 'auto',
-                    'left': '0',
-                    'margin-left': '0',
-                    'margin-top': '-' + (modalHeight/2) + 'px',
-                    'padding-right': '0',
-                    'top': '50%',
-                    'bottom': 'auto'
-                });
-                $('body').addClass('modal-open-no-backdrop');
-            }
-        });
-        $(this).on('hide.bs.modal', function (e) {
-            var bodyDefault = setTimeout(function(){
-                $('body').removeClass('modal-open-no-backdrop');
-            }, 1000);
-        });
-    });
-
-
-    $('.modal').each(function(){
-        $(this).on('show.bs.modal', function (e) {
-            if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-center-right')) {
-                var modalHeight = $(this).css('height').slice(0,-2);
-                $(this).css({
-                    'right': '0',
-                    'left': 'auto',
-                    'margin-left': '0',
-                    'margin-top': '-' + (modalHeight/2) + 'px',
-                    'padding-right': '0',
-                    'top': '50%',
-                    'bottom': 'auto'
-                });
-                $('body').addClass('modal-open-no-backdrop');
-            }
-        });
-        $(this).on('hide.bs.modal', function (e) {
-            var bodyDefault = setTimeout(function(){
-                $('body').removeClass('modal-open-no-backdrop');
-            }, 1000);
-        });
-    });
-
-    $('.modal').each(function(){
-        $(this).on('show.bs.modal', function (e) {
-            if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-center-center')) {
-                var modalWidth = $(this).find('.modal-dialog').css('max-width').slice(0,-2);
-                var modalHeight = $(this).css('height').slice(0,-2);
-                $(this).css({
-                    'right': 'auto',
-                    'left': '50%',
-                    'margin-left': '-' + (modalWidth/2) + 'px',
-                    'margin-top': '-' + (modalHeight/2) + 'px',
-                    'padding-right': '0',
-                    'top': '50%',
-                    'bottom': 'auto'
-                });
-                $('body').addClass('modal-open-no-backdrop');
-            }
-        });
-        $(this).on('hide.bs.modal', function (e) {
-            var bodyDefault = setTimeout(function(){
-                $('body').removeClass('modal-open-no-backdrop');
-            }, 1000);
-        });
-    });
-
-
-    $('.modal').each(function(){
-        $(this).on('show.bs.modal', function (e) {
-            if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-bottom-right')) {
-                $(this).css({
-                    'right': '0',
-                    'left': 'auto',
-                    'margin-left': '0',
-                    'margin-top': '0',
-                    'padding-right': '0',
-                    'top': 'auto',
-                    'bottom': '0'
-                });
-                $('body').addClass('modal-open-no-backdrop');
-            }
-        });
-        $(this).on('hide.bs.modal', function (e) {
-            var bodyDefault = setTimeout(function(){
-                $('body').removeClass('modal-open-no-backdrop');
-            }, 1000);
-        });
-    });
-
-    $('.modal').each(function(){
-        $(this).on('show.bs.modal', function (e) {
-            if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-bottom-left')) {
-                $(this).css({
-                    'right': 'auto',
-                    'left': '0',
-                    'margin-left': '0',
-                    'margin-top': '0',
-                    'padding-right': '0',
-                    'top': 'auto',
-                    'bottom': '0'
-                });
-                $('body').addClass('modal-open-no-backdrop');
-            }
-        });
-        $(this).on('hide.bs.modal', function (e) {
-            var bodyDefault = setTimeout(function(){
-                $('body').removeClass('modal-open-no-backdrop');
-            }, 1000);
-        });
-    });
-
-    $('.modal').each(function(){
-        $(this).on('show.bs.modal', function (e) {
-            if($(this).attr('data-backdrop') == 'false' && $(this).hasClass('position-bottom-center')) {
-                var modalWidth = $(this).find('.modal-dialog').css('max-width').slice(0,-2);
-                $(this).css({
-                    'right': 'auto',
-                    'left': '50%',
-                    'margin-left': '-' + (modalWidth/2) + 'px',
-                    'margin-top': '0',
-                    'padding-right': '0',
-                    'top': 'auto',
-                    'bottom': '0'
-                });
-                $('body').addClass('modal-open-no-backdrop');
-            }
-        });
-        $(this).on('hide.bs.modal', function (e) {
-            var bodyDefault = setTimeout(function(){
-                $('body').removeClass('modal-open-no-backdrop');
-            }, 1000);
-        });
-    });
     
     
     
