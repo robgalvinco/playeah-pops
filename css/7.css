@@ -1,0 +1,32 @@
+#playeah-pops .pp-modal-content {
+    padding: 36px 24px;
+    background-color: {{color_bg}};
+}
+#playeah-pops .popup-text {
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+    color: {{color_copy}};
+}
+#playeah-pops .pop-media img {
+    max-width: 100%;
+    
+}
+#playeah-pops .btn {
+    padding-left: 33px;
+    padding-right: 33px;
+    height: 44px;
+    border: solid 2px{{color_cta_bg}};
+    font-size: 16px;
+    line-height: 1.8;
+    color:{{color_cta_bg}};
+}
+#playeah-pops .btn:hover {
+    background-color:{{color_cta_bg}} !important;
+    color: {{color_cta_text}};
+}
+#playeah-pops .btn:active {
+    background-color: {{color_cta_bg}} !important;
+    border-color: {{color_cta_bg}};
+    color: {{color_cta_text}};
+}

@@ -11,27 +11,39 @@
 * insert css and html into the document
 * load pop / determine if need to autohide after delay
 
-#css (add this to snippets)
+# changes needed on snippets
+* change `modal-header`,`modal-footer`,`modal-body` to `pp-modal-header`,`pp-modal-footer`,`pp-modal-body`
+* change xxx-# to playeah-pops in both html and css
+* add classes to css
+* replace html with {{names}}
+* replace css colors with {{names}}
+
+## css (add these classes to snippets)
 * pop-media
 * pop-heading
 * pop-subheading
 * pop-cta-section
 * pop-cta
 
-#{{names}} will be used to auto replace content
+## {{names}} will be used to auto replace content
 
 ## html
-* {{media}} - will be area of media - img,lottie,video
+* {{media}} - will be area of media remove if using img_src
+* {{img_src}}
 * {{heading}}
 * {{subheading}}
 * {{cta_link}}
 * {{cta_page}}
 
-#css
+
+# css
 * {{color_cta_bg}}
 * {{color_cta_text}}
+* {{color_bg}}
+* {{color_heading}}
+* {{color_copy}}
 
-#Minify command -option -m
+# Minify command -option -m
 
 
 

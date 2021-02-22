@@ -1,0 +1,41 @@
+#playeah-pops .pp-modal-content {
+    background-image: url(https://cdn.jsdelivr.net/gh/robgalvinco/playeah-pops@latest/images/coupon.png);
+    background-color: transparent;
+    background-size: cover;
+}
+
+#playeah-pops .pp-modal-body {
+    padding: 40px 20px 8px;
+}
+#playeah-pops .pp-modal-body:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 86%;
+    left: 7%;
+    border-bottom: 2px dashed #F49C76;
+}
+#playeah-pops .pp-modal-body .popup-title {
+    font-style: italic;
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 30px;
+}
+#playeah-pops .pp-modal-body .popup-text {
+    opacity: .3;
+    line-height: 24px;
+    font-size: 14px;
+}
+#playeah-pops .pp-modal-footer {
+    padding: 15px;
+}
+#playeah-pops .pp-modal-footer .popup-text {
+    line-height: 1;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+    #playeah-pops .ppmodal-body {
+        position: relative!important
+    }
+}

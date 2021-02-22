@@ -1,0 +1,44 @@
+#playeah-pops .pp-modal-content {
+    background-color: {{color_bg}};
+    padding: 22px 0 0;
+}
+#playeah-pops .pp-modal-body {
+    padding: 0 21px 22px;
+}
+#playeah-pops .popup-text {
+    font-size: 16px;
+    line-height: 1.38;
+    color: {{color_heading}};
+}
+#playeah-pops .pop-media img {
+    max-width: 48px;
+    border-radius: 50%;
+}
+#playeah-pops .pp-modal-footer {
+    /* border-top: 1px solid rgba(101, 165, 81, 0.7); */
+}
+#playeah-pops .btn-link {
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: {{color_cta_bg}};
+    color : {{color_cta_text}};
+}
+#playeah-pops .btn-link:hover {
+    opacity: .85
+}
+#playeah-pops .btn-link:active {
+    opacity: .85
+}
+@media only screen and (max-width: 767px) {
+    #playeah-pops .modal-content {
+        text-align: center;
+    }
+    #playeah-pops .col-md-auto {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,55 @@
+#playeah-pops .pp-modal-content {
+    padding: 28px 0 0 52px;
+    overflow: hidden;
+    background-color: {{color_bg}};
+}
+#playeah-pops .popup-inner {
+    padding: 15px 0;
+}
+#playeah-pops .popup-title {
+    font-size: 22px;
+    line-height: 1.45;
+    letter-spacing: -0.2px;
+    margin-bottom: 12px;
+    max-width: 201px;
+    color: {{color_heading}};
+    
+}
+#playeah-pops .popup-text {
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: 0.1px;
+    margin-bottom: 33px;
+    max-width: 201px;
+    color: {{color_copy}};
+}
+#playeah-pops .pop-media img {
+    max-width: 284px;
+}
+#playeah-pops .popup-image-inner {
+    height: 252px;
+}
+#playeah-pops .popup-image-inner img {
+    max-width: initial;
+    min-height: 100%;
+}
+#playeah-pops .btn {
+    padding-left: 21px;
+    padding-right: 21px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 2.1;
+    background-color: {{color_cta_bg}};
+    color : {{color_cta_text}};
+}
+#playeah-pops .btn:hover {
+    opacity: .85;
+}
+#playeah-pops .btn:active {
+    opacity: .85;
+}
+@media only screen and (max-width: 575px) {
+    #playeah-pops .modal-content {
+        padding: 28px 0 28px 38px;
+    }
+}

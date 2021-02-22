@@ -1,0 +1,39 @@
+#playeah-pops .pp-modal-content {
+    background-color: {{color_bg}};
+}
+#playeah-pops .pp-modal-header {
+    padding-bottom: 29px;
+    padding-top: 35px;
+}
+#playeah-pops .pp-modal-body {
+    padding: 0 28px 45px;
+    border-bottom: 1px solid #E5E5E5;
+}
+#playeah-pops .popup-title {
+    line-height: 30px;
+    font-size: 22px;
+    letter-spacing: -0.4px;
+    margin-bottom: 11px;
+    color: {{color_heading}};
+}
+#playeah-pops .popup-text {
+    line-height: 22px;
+    font-size: 14px;
+    color: {{color_copy}};
+}
+#playeah-pops .pp-modal-footer a {
+    background-color: {{color_cta_bg}};
+    color : {{color_cta_text}};
+    font-size: 14px;
+    padding: 14px 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#playeah-pops .pp-modal-footer a:hover {
+    opacity: .85;
+}
+#playeah-pops .pp-modal-footer a:active {
+    opacity: .85;
+}

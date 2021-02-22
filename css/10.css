@@ -1,0 +1,24 @@
+#playeah-pops .pp-modal-content {
+    padding: 36px 54px 0;
+    background-color: {{color_bg}};
+    overflow: hidden;
+}
+#playeah-pops .popup-title {
+    font-size: 27px;
+    line-height: 1.41;
+    letter-spacing: -0.1px;
+    margin-bottom: 33px;
+    color: {{color_heading}};
+}
+#playeah-pops .popup-image-inner {
+    height: 280px;
+}
+#playeah-pops .popup-image {
+    left: 50%;
+    margin-left: -112.25px;
+    max-width: initial;
+}
+#playeah-pops .pop-media img {
+    max-width: 100%;
+    
+}

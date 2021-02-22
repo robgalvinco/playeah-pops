@@ -1,22 +1,22 @@
 <div class="modal position-bottom-center fade m-width-570" id="playeah-pops" playeah-pops-show="bounceIn" playeah-pops-hide="bounceOut">
     <div class="modal-dialog">
-        <div class="modal-content bg-white">
-            <div class="modal-header">
+        <div class="pp-modal-content ">
+            <div class="pp-modal-header">
                 <button type="button" class="close close-dark" data-dismiss="modal"></button>
             </div>
-            <div class="modal-body">
+            <div class="pp-modal-body">
                 <div class="col">
                     <div class="row">
                         <div class="col-md-auto col-sm-auto px-0 pop-media">
                             {{media}}
-                            
+                            <img src="{{img_src}}"  alt="" />
                         </div>
-                        <div class="col-md-auto col-sm-auto align-self-center">
+                        <div class="col-md-auto col-sm-auto align-self-center col-copy">
                             <div class="popup-title pop-heading">{{heading}}</div>
                             <p class="popup-text mb-0 pop-subheading">{{subheading}}</p>
                         </div>
                         <div class="col align-self-center pop-cta-section">
-                            <a href="{{cta_link}}" class="btn ml-5 b-radius-25 pop-cta">{{cta_text}}</a>
+                            <button data-href="{{cta_link}}" class="btn ml-5 b-radius-25 pop-cta">{{cta_text}}</button>
                         </div>
                     </div>
                 </div>       

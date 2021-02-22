@@ -1,5 +1,6 @@
 #playeah-pops .pp-modal-content {
     padding: 13px 16px;
+    background-color: {{color_bg}};
 }
 #playeah-pops .pp-modal-header .close {
     top: 17.5px;
@@ -9,10 +10,14 @@
     font-size: 16px;
     line-height: 1.07;
     margin-bottom: 9px;
+    max-width: 280px;
+    color: {{color_heading}};
 }
 #playeah-pops .popup-text {
     font-size: 14px;
     line-height: 1;
+    max-width: 280px;
+    color: {{color_copy}};
 }
 #playeah-pops .btn {
     width: 120px;
@@ -27,6 +32,15 @@
 }
 #playeah-pops .btn:active {
     background-color:{{color_cta_bg}};
+}
+#playeah-pops .pop-media img {
+    max-width: 52px;
+}
+@media (min-width: 768px){
+    #playeah-pops .col-copy {
+        max-width: 260px;
+    }
+    
 }
 @media only screen and (max-width: 575px) {
     #playeah-pops .pp-modal-content {

@@ -1,0 +1,35 @@
+#playeah-pops .pp-modal-content {
+    background-color: {{color_bg}};
+    padding: 54px 52px 51px;
+}
+#playeah-pops .popup-image {
+    margin-bottom: 35px;
+    max-width: 100%
+}
+#playeah-pops .popup-title {
+    font-size: 28px;
+    line-height: 1.35;
+    letter-spacing: -0.4px;
+    color: {{color_heading}};
+}
+#playeah-pops .btn {
+    padding-left: 28px;
+    padding-right: 28px;
+    height: 49px;
+    font-size: 16px;
+    line-height: 2.4;
+    background-color: {{color_cta_bg}};
+    color : {{color_cta_text}};
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+#playeah-pops .btn:hover {
+    -moz-transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
