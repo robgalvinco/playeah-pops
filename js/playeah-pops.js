@@ -1,7 +1,7 @@
 window._playeah = {pops :[
-    {"auto_close":5,"pop_type":15,"pop_img":"https://media.giphy.com/media/12SBwtRR9BnWg/giphy.gif","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"mini","progress":1,"lottie":"https://assets10.lottiefiles.com/packages/lf20_1ILlx2.json","heading":"{{NAME}}, You are off to the races","copy":"","cta_text":"","cta_link":"","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false},
-    {"auto_close":0,"pop_type":15,"pop_img":"https://placehold.it/52x52","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"push","progress":25,"lottie":"https://assets9.lottiefiles.com/temp/lf20_2Mjp2m.json","heading":"{{NAME}},We are here for you","copy":"Don't worry if yu get stuck. There is a whole community waiting to help you make progress","cta_text":"Get help","cta_link":"https://ww.facebook.com","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false},
-    {"auto_close":0,"pop_type":15,"pop_img":"https://source.unsplash.com/user/erondu/1600x900","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"full","progress":100,"lottie":"https://assets8.lottiefiles.com/packages/lf20_UVDY7k.json","heading":"A multi line heading which may be long","copy":"some really long copy that might span a few lines because people like to write a lof of bull shit","cta_text":"","cta_link":"","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false}]
+    {"media_type":"lottie","pop_type":16,"pop_img":"https://media.giphy.com/media/12SBwtRR9BnWg/giphy.gif","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"mini","progress":1,"lottie":"https://assets10.lottiefiles.com/packages/lf20_1ILlx2.json","heading":"{{NAME}}, You are off to the races","copy":"","cta_text":"","cta_link":"","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false},
+    {"media_type":"lottie","auto_close":0,"pop_type":16,"pop_img":"https://placehold.it/52x52","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"push","progress":25,"lottie":"https://assets9.lottiefiles.com/temp/lf20_2Mjp2m.json","heading":"{{NAME}},We are here for you","copy":"Don't worry if yu get stuck. There is a whole community waiting to help you make progress","cta_text":"Get help","cta_link":"https://ww.facebook.com","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false},
+    {"media_type":"lottie","auto_close":0,"pop_type":16,"pop_img":"https://source.unsplash.com/user/erondu/1600x900","enabled":true,"id":"all","trigger_type":"progress","shown":"once","courses":[],"course_names":[],"type":"full","progress":100,"lottie":"https://assets8.lottiefiles.com/packages/lf20_UVDY7k.json","heading":"A multi line heading which may be long","copy":"some really long copy that might span a few lines because people like to write a lof of bull shit","cta_text":"","cta_link":"","played":false,"color_bg":"#1E2849","color_heading":"#19CCA2","color_copy":"#FFFFFF","color_cta_bg":"#19CCA2","color_cta_text":"#FFFFFF","has_warning":false}]
 }
 
 /* plaYEAH PowerUp For Thinkific v(v1.0.6)
@@ -87,13 +87,22 @@ v1.0.4
         html = html.replace(/{{cta_link}}/g,pop.cta_link);
         html = html.replace(/{{cta_text}}/g,pop.cta_text);
         html = html.replace(/{{img_src}}/g,pop.pop_img);
-        html = html.replace(/{{media}}/g,"");
+        if(pop.media_type=="lottie"){
+            var lottie = '<lottie-player src="'+pop.lottie+'"  background="transparent"  speed="1"  style="width: 100%; "  loop  autoplay></lottie-player>';
+            html = html.replace(/{{media}}/g,lottie);
+        } else {
+            html = html.replace(/{{media}}/g,"");
+        }
+        
         console.log("HTML",html);
 
         // inject any special CSS for any needed of hiding things
         // TBD
         if(pop.cta_link == "" || pop.cta_text ==""){
             css += "<style>.pop-cta-section{display:none !important;}</style>";
+        }
+        if(pop.media_type=="lottie"){
+            css += "<style>#playeah-pops .pop-media img{display:none !important;}</style>";
         }
 
         //load all into container
