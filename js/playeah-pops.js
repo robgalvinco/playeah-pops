@@ -220,7 +220,7 @@ v1.0.4
         var f = document.getElementsByTagName("script")[0];
         j3 = document.createElement("link");
         j3.rel = "stylesheet";
-        j3.href = "https://cdn.jsdelivr.net/gh/robgalvinco/playeah-pops@0.0.1/css/playeah-pops.css";
+        j3.href = "https://cdn.jsdelivr.net/gh/robgalvinco/playeah-pops@latest/css/playeah-pops.css";
         f.parentNode.insertBefore(j3, f);
 
         //var style = '<style>#playeah-fs{display:none;}.playeah-mini-image{height:64px;width: 64px;}.playeah-nudge-image{height:100px;width: 100px;}.playeah-modal-image{height:200px;width: 200px;margin-left: auto!important;margin-right: auto!important;}</style>';
