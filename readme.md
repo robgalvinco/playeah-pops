@@ -47,4 +47,22 @@
 
 
 
+# Types
+* 0 - Notification bar with image  has cta
+* 1 - Center msg no CTA 
+* 2 - Lower Right no image - copt and CTA
+* 3 - Lower Right imag/heading/cta - no subcopy
+* 4 - Notification bar - just text and cta
+* 5 - Small avatar image - just subcopy optional CTA 
+* 6 - Top center media / heading/ copy /cta
+* 7 - Similar to 6 but has border button and is in middle
+* 8 - Has side image (right) and heading, copy, cta
+* 9 - Has side image (left) heading, copy, cta 
+* 10 - Image below heading - no cta, no copy
+* 11 - background image
+* 12 - Coupon
+* 13 - Seems just like 9
+* 14 - Middle narrow, button part of modal 
+* 15 - Image on top heading, copy, cta (need to fix line height of heading)
+
 
