@@ -3,8 +3,9 @@
     background-color: {color_bg};
 }
 #playeah-pops .pp-modal-header .close {
-    top: 17.5px;
+    top: 0px;
     right: 7px;
+    padding: 0px;
 }
 #playeah-pops .popup-title {
     font-size: 16px;
@@ -20,12 +21,13 @@
     color: {color_copy};
 }
 #playeah-pops .btn {
-    width: 120px;
+    width: fit-content;
     height: 36px;
     background-color: {color_cta_bg};
     color : {color_cta_text};
     font-size: 14px;
     line-height: 1;
+    float: right;
 }
 #playeah-pops .btn:hover {
     opacity: .85;

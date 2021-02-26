@@ -3,8 +3,9 @@
     background-color: {color_bg};
 }
 #playeah-pops .pp-modal-header .close {
-    top: 54px;
-    right: 14px;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
 }
 #playeah-pops .popup-title {
     font-size: 20px;

@@ -121,7 +121,7 @@
  div[id*=playeah-pop] .close {float: right;font-size: 24px;font-weight: 700;line-height: 1;color: #000;text-shadow: 0 1px 0 #fff}
  div[id*=playeah-pop] button.close {background-color: transparent;border: 0;-webkit-appearance: none}
  div[id*=playeah-pop] .close:not(:disabled):not(.disabled) {cursor: pointer}
- div[id*=playeah-pop] .pp-modal-header .close {padding: 20px;margin: 0;position: absolute;top: 6px;right: 8px;opacity: 1;outline: 0;z-index: 2}
+ div[id*=playeah-pop] .pp-modal-header .close {padding: 10px;margin: 0;position: absolute;top: 0px;right: 0px;opacity: 1;outline: 0;z-index: 2}
  div[id*=playeah-pop] .pp-modal-header .close:before {content: '';width: 15px;height: 15px;position: absolute;top: 12.5px;right: 12.5px;background-size: contain;opacity: .3;-webkit-transition: opacity 0.3s ease-in-out;-moz-transition: opacity 0.3s ease-in-out;-ms-transition: opacity 0.3s ease-in-out;-o-transition: opacity 0.3s ease-in-out;transition: opacity 0.3s ease-in-out}
  div[id*=playeah-pop] .pp-modal-header .close:hover:before {opacity: 1}
  div[id*=playeah-pop] .close.close-light:before {background-image: url(https://cdn.jsdelivr.net/gh/robgalvinco/playeah-pops@latest/images/icon-close-light.svg);opacity: .6}

@@ -63,7 +63,7 @@ v1.2.0
         var modal_type = pop.modal_type; //TBD replace with cofog from obj
 
         //get and replace CSS
-        var css = "<style>#playeah-pops .popup-title {line-height: initial; }#playeah-pops .pp-modal-content {overflow: hidden;}"+_pops_css[modal_type]+"</style>";
+        var css = "<style>.modal-backdrop {background-color:transparent;}#playeah-pops .popup-title {line-height: initial; }#playeah-pops .pp-modal-content {overflow: hidden;}"+_pops_css[modal_type]+"</style>";
         //replace color_cta_bg, color_cta_text
         css = css.replace(/{color_cta_bg}/g,pop.color_cta_bg);
         css = css.replace(/{color_cta_text}/g,pop.color_cta_text);
