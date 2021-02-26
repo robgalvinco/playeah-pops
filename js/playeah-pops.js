@@ -636,7 +636,7 @@ v1.2.0
                 var __pops_index = pops.findIndex(function(pop, index) {
                     if(pop.courses.contains(courseid) && pop.trigger_type=="lesson_start"){
                         var __lessons_index = pops[index].lessons.findIndex(function(lesson, lessonindex) {
-                            if(lesson.lessonid.contains(lessonid)){
+                            if(lesson.lessonids.contains(lessonid)){
                                 console.log("found lesson");
                                 return ture
                             }
