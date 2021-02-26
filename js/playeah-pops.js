@@ -635,8 +635,11 @@ v1.2.0
                 var lessonid = data.lesson.id;
                 var __pops_index = pops.findIndex(function(pop, index) {
                     if(pop.courses.contains(courseid) && pop.trigger_type=="lesson_start"){
+                        console.log("found course",pop);
                         var __lessons_index = pops[index].lessons.findIndex(function(lesson, lessonindex) {
-                            if(lesson.lessonids.contains(lessonid)){
+                            var lessonids = lesson.lessonids.split(",");
+                            console.log("Lessons"+lessonids)
+                            if(lessonids.contains(lessonid)){
                                 console.log("found lesson");
                                 return ture
                             }
