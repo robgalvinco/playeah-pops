@@ -225,7 +225,7 @@ v1.2.0
     const inject_html= function(){
     console.log("injecting html");
     var html = '<div id="playeah-pop-container"></div>';
-        html += '<style>#playeah-fs{display:none;}</style><lottie-player id="playeah-fs" background="transparent" speed="1" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 9999999999;" autoplay=""></lottie-player>';
+        html += '<style>#playeah-fs{display:none;}</style><lottie-player id="playeah-fs" background="transparent" speed="1" style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 9999999999;" autoplay=""></lottie-player>';
     
     $("body").append(html);       
 
@@ -250,29 +250,24 @@ v1.2.0
     }   
     const find_and_play = function(progress, courseid){
         console.log(progress,courseid);
-        var __allcourses_index = pops.findIndex(function(pop, index) {
-        if(pop.id == "all" && pop.progress<=progress  && !pop.progress_met)
-            return true;
-        });     
+    
         console.log("all index: "+__allcourses_index);  
         var __courses_index = pops.findIndex(function(pop, index) {
-            if(pop.courses.contains(courseid)  && pop.progress<=progress  && !pop.progress_met)
+            if(pop.courses.contains(courseid)  && pop.progress<=progress  && !pop.played)
                 return true;
         }); 
         console.log("course index: "+__courses_index);
         if(__courses_index != -1){
                 show_pop(__courses_index);
-                //make sure the "all" one with same progress does not play
-                __allcourses_index = pops.findIndex(function(pop, index) {
-                    if(pop.id == "all" && pop.progress==progress  && !pop.progress_met)
-                        return true;
-                }); 
-                if(__allcourses_index != -1){
-                    pops[__allcourses_index].progress_met=true;
-                }
+                pops[__courses_index].played=true;
         
         }  else {
+            var __allcourses_index = pops.findIndex(function(pop, index) {
+                if(pop.id == "all" && pop.progress<=progress  && !pop.played)
+                    return true;
+            });             
             if(__allcourses_index != -1){
+                pops[__allcourses_index].played=true
                 show_pop(__allcourses_index)
             }
         }
@@ -641,7 +636,7 @@ v1.2.0
                             console.log("Lessons"+lessonids)
                             if(lessonids.contains(lessonid)){
                                 console.log("found lesson");
-                                return ture
+                                return true
                             }
                         })
                         if(__lessons_index!=-1){
@@ -665,10 +660,14 @@ v1.2.0
                 var courseid = data.course.id;
                 var lessonid = data.lesson.id;
                 var __pops_index = pops.findIndex(function(pop, index) {
-                    if(pop.courses.contains(courseid) && pop.trigger_type=="lesson_start"){
-                        var __lessons_index = pops[index].lessons(function(lesson, lessonindex) {
-                            if(lesson.lessonid.contains(lessonid)){
-                                return ture
+                    if(pop.courses.contains(courseid) && pop.trigger_type=="lesson_complete"){
+                        console.log("found course",pop);
+                        var __lessons_index = pops[index].lessons.findIndex(function(lesson, lessonindex) {
+                            var lessonids = lesson.lessonids.split(",");
+                            console.log("Lessons"+lessonids)
+                            if(lessonids.contains(lessonid)){
+                                console.log("found lesson");
+                                return true
                             }
                         })
                         if(__lessons_index!=-1){
@@ -679,7 +678,8 @@ v1.2.0
                 }); 
                 if(__pops_index != -1){
                     show_pop(__pops_index);
-                } else {
+                }
+                 else {
                     // check for progress
                     find_and_play(progress,data.course.id)
 
