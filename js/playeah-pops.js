@@ -251,7 +251,6 @@ v1.2.0
     const find_and_play = function(progress, courseid){
         console.log(progress,courseid);
     
-        console.log("all index: "+__allcourses_index);  
         var __courses_index = pops.findIndex(function(pop, index) {
             if(pop.courses.contains(courseid)  && pop.progress<=progress  && !pop.played)
                 return true;
@@ -265,7 +264,8 @@ v1.2.0
             var __allcourses_index = pops.findIndex(function(pop, index) {
                 if(pop.id == "all" && pop.progress<=progress  && !pop.played)
                     return true;
-            });             
+            });   
+            console.log("all index"+__allcourses_index);          
             if(__allcourses_index != -1){
                 pops[__allcourses_index].played=true
                 show_pop(__allcourses_index)
