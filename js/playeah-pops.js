@@ -252,7 +252,7 @@ v1.2.0
         console.log(progress,courseid);
     
         var __courses_index = pops.findIndex(function(pop, index) {
-            if(pop.courses.contains(courseid)  && pop.progress<=progress  && !pop.played)
+            if(pop.trigger_type=="progress" && pop.courses.contains(courseid)  && pop.progress<=progress  && !pop.played)
                 return true;
         }); 
         console.log("course index: "+__courses_index);
@@ -262,7 +262,7 @@ v1.2.0
         
         }  else {
             var __allcourses_index = pops.findIndex(function(pop, index) {
-                if(pop.id == "all" && pop.progress<=progress  && !pop.played)
+                if(pop.trigger_type=="progress" && pop.id == "all" && pop.progress<=progress  && !pop.played)
                     return true;
             });   
             console.log("all index"+__allcourses_index);          
@@ -625,6 +625,23 @@ v1.2.0
         
             CoursePlayerV2.on('hooks:contentDidChange', function(data) {
                 console.log(data);
+
+                // if re-opening course already completed set played
+                if(_progress_start == -1){
+                    console.log("Setting default");
+                    _progress_start = data.enrollment.percentage_completed*100;
+                    console.log("start: "+_progress_start)
+                    //mark celebrations played if progress is >0
+                    for (i = 0; i < pops.length; i++) {
+                        if(pops[i].trigger_type=="progress" && pops[i].progress <= _progress_start){
+                            pops[i].played=true;
+                        }
+                    }                
+                    console.log("pops now",pops);
+                }
+                
+
+
                 //check for specific lesson start
                 var courseid = data.course.id;
                 var lessonid = data.lesson.id;
@@ -655,8 +672,7 @@ v1.2.0
                 console.log(data);
                 var progress = data.enrollment.percentage_completed*100;
                 console.log(progress)
-
-                //check for specific lesson start
+                //check for specific lesson complete
                 var courseid = data.course.id;
                 var lessonid = data.lesson.id;
                 var __pops_index = pops.findIndex(function(pop, index) {
