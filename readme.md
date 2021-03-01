@@ -61,7 +61,7 @@
 * 10 - Image below heading - no cta, no copy
 * 11 - background image
 * 12 - Coupon
-* 13 - Seems just like 9
+* 13 - Seems just like 9 (remove)
 * 14 - Middle narrow, button part of modal 
 * 15 - Image on top heading, copy, cta (need to fix line height of heading)
 * 16 - Center cta, heading, copy cta - square button
