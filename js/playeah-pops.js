@@ -167,6 +167,7 @@ v1.2.0
     }
 
     const inject_uikit= function(){
+        
          var f = document.getElementsByTagName("script")[0],
             j = document.createElement("script");
             j.async = false;
