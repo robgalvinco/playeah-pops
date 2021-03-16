@@ -146,7 +146,7 @@ v1.2.0
             $(".pow-tourcard-button").text(tour_step.button_text);
             switch(tour_step.step_type) {
                 case "start":
-                    start_tour();
+                    start_tour(tour_step);
                     break;
                 case "mobile_menu":
                     show_mobile_menu();
@@ -184,15 +184,21 @@ v1.2.0
 
     }
 
-    const start_tour = function(){
+    const start_tour = function(tour_step){
         clear_caret();
         $(".pow-tourcard").removeClass("pow-hidden");
         $(".pow-tourcard").removeClass("pow-pos-start animate__animated animate__slideInLeft");
         $(".pow-tourcard").addClass("pow-pos-start animate__animated animate__slideInLeft");
         if(!is_mobile()){
-            $(".pow-tourcard").css({ bottom: 10, top: "initial",left: 20, right:"initial"});
+            if(tour_step.location=="top_left"){
+                $(".pow-tourcard").css({ bottom: "initial", top: 10,left: 20, right:"initial"});
+            } else {
+
+                $(".pow-tourcard").css({ bottom: 10, top: "initial",left: 20, right:"initial"});
+            }
         } else {
-            $(".pow-tourcard").css({ bottom: 0, top: "initial",left: 0, right:"initial"});
+                $(".pow-tourcard").css({ bottom: 0, top: "initial",left: 0, right:"initial"});
+            
 
         }
         $(".pow-tourcard").addClass("pow-tourcard-open pow-pos-start");
