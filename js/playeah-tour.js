@@ -13,6 +13,15 @@ v1.2.0
         $("body").append(html);       
 
     }
+    const inject_animate= function(){
+        var f = document.getElementsByTagName("script")[0];
+
+        j3 = document.createElement("link");
+        j3.rel = "stylesheet";
+        j3.href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+        f.parentNode.insertBefore(j3, f);
+
+    }     
     const inject_uikit= function(){
         
         var f = document.getElementsByTagName("script")[0],
@@ -363,6 +372,7 @@ v1.2.0
         var started = false;
         if(typeof(CoursePlayerV2) !== 'undefined') {
             inject_uikit();
+            inject_animate();
             inject_html();
             
              
@@ -372,11 +382,11 @@ v1.2.0
             if(!started){
                 add_start_tour_button();
                 started = true;
-                if (localStorage.getItem('playeah_tour_started') !== null) {
+                if (localStorage.getItem(Thinkific.current_user.subdomain+'playeah_tour_started') !== null) {
                     
 
                 } else {
-                    localStorage.setItem("playeah_tour_started", Date.now());
+                    localStorage.setItem(Thinkific.current_user.subdomain+"playeah_tour_started", Date.now());
                     show_next();
                 }                
             }
