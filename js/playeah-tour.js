@@ -380,23 +380,24 @@ v1.2.0
             inject_uikit();
             inject_animate();
             inject_html();
-            
+
+            CoursePlayerV2.on('hooks:contentDidChange', function(data) {
+                console.log(data);
+                if(!started){
+                    add_start_tour_button();
+                    started = true;
+                    if (localStorage.getItem(Thinkific.current_user.subdomain+'playeah_tour_started') !== null) {
+                        
+    
+                    } else {
+                        localStorage.setItem(Thinkific.current_user.subdomain+"playeah_tour_started", Date.now());
+                        show_next();
+                    }                
+                }
+            });            
              
         }
-        CoursePlayerV2.on('hooks:contentDidChange', function(data) {
-            console.log(data);
-            if(!started){
-                add_start_tour_button();
-                started = true;
-                if (localStorage.getItem(Thinkific.current_user.subdomain+'playeah_tour_started') !== null) {
-                    
 
-                } else {
-                    localStorage.setItem(Thinkific.current_user.subdomain+"playeah_tour_started", Date.now());
-                    show_next();
-                }                
-            }
-        });
     });    
 
     
