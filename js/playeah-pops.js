@@ -634,7 +634,7 @@ v1.2.0
                     console.log("start: "+_progress_start)
                     //mark celebrations played if progress is >0
                     for (i = 0; i < pops.length; i++) {
-                        if(pops[i].trigger_type=="progress" && pops[i].progress <= _progress_start){
+                        if(pops[i].trigger_type=="progress" && pops[i].progress <= _progress_start && pops[i].shown!="always"){
                             pops[i].played=true;
                         }
                     }                
