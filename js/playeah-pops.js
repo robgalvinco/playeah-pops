@@ -1,7 +1,7 @@
 
-/* plaYEAH PowerUp For Thinkific v(v1.2.0)
+/* plaYEAH PowerUp For Thinkific v(v1.2.1)
 https://powerups.thinkific.com/pages/playeah
-v1.2.0
+v1.2.1
 */
 (function () {
     var pops = window._playeah.pops;
@@ -639,9 +639,15 @@ v1.2.0
             inject_lottie();
             inject_html();
             inject_uikit();
-        
+            var prev_lesson_id = "";
+            var prev_progress = 0;
+            var first_load = true;
+            
             CoursePlayerV2.on('hooks:contentDidChange', function(data) {
                 console.log(data);
+                var shown_prog = parseInt($(".course-progress__percent-complete span").first().text());
+                var api_prog = data.enrollment.percentage_completed*100;
+         
 
                 // if re-opening course already completed set played
                 if(_progress_start == -1){
@@ -682,10 +688,92 @@ v1.2.0
                 if(__pops_index != -1){
                     show_pop(__pops_index);
                 }
+                if(first_load){
+           
+                    prev_progress = shown_prog;
+                    prev_lesson_id = data.lesson.id;
+                    first_load = false;
+                } else {
+                    new_progress =shown_prog;
+                    new_lesson_id = data.lesson.id;
+                    if(new_progress > prev_progress){
+                        console.log(prev_lesson_id + " last lesson completed, progress changed");
+                        //do progress or lesson complete handling
+                        var courseid = data.course.id;
+                        var lessonid = prev_lesson_id;
+                        var __pops_index = pops.findIndex(function(pop, index) {
+                            if(pop.courses.contains(courseid) && pop.trigger_type=="lesson_complete"){
+                                console.log("found course",pop);
+                                var __lessons_index = pops[index].lessons.findIndex(function(lesson, lessonindex) {
+                                    var lessonids = lesson.lessonids.split(",");
+                                    console.log("Lessons"+lessonids)
+                                    if(lessonids.contains(lessonid)){
+                                        console.log("found lesson");
+                                        return true
+                                    }
+                                })
+                                if(__lessons_index!=-1){
+                                    return true;
+                                }
+                            }
+                                
+                        }); 
+                        if(__pops_index != -1){
+                            show_pop(__pops_index);
+                        }
+                         else {
+                            // check for progress
+                            find_and_play(new_progress,data.course.id)
+        
+                        }    
+
+                    }
+                    
+                    //reset
+                    prev_progress = new_progress;
+                    prev_lesson_id = new_lesson_id;
+         
+                }
                 
             });
 
+            CoursePlayerV2.on('hooks:enrollmentWasCompleted', function(data) {
+                console.log("Completed",data)
+                var progress = data.enrollment.percentage_completed*100;
+                console.log(progress)
+                //check for specific lesson complete
+                var courseid = data.course.id;
+                var lessonid = data.lesson.id;
+                var __pops_index = pops.findIndex(function(pop, index) {
+                    if(pop.courses.contains(courseid) && pop.trigger_type=="lesson_complete"){
+                        console.log("found course",pop);
+                        var __lessons_index = pops[index].lessons.findIndex(function(lesson, lessonindex) {
+                            var lessonids = lesson.lessonids.split(",");
+                            console.log("Lessons"+lessonids)
+                            if(lessonids.contains(lessonid)){
+                                console.log("found lesson");
+                                return true
+                            }
+                        })
+                        if(__lessons_index!=-1){
+                            return true;
+                        }
+                    }
+                        
+                }); 
+                if(__pops_index != -1){
+                    show_pop(__pops_index);
+                }
+                 else {
+                    // check for progress
+                    find_and_play(progress,data.course.id)
+
+                }  
+
+            });      
+         
             CoursePlayerV2.on('hooks:contentWasCompleted', function(data) {
+                /*
                 console.log(data);
                 var progress = data.enrollment.percentage_completed*100;
                 console.log(progress)
@@ -716,7 +804,8 @@ v1.2.0
                     // check for progress
                     find_and_play(progress,data.course.id)
 
-                }                
+                }  
+                */              
             });
              
         }
