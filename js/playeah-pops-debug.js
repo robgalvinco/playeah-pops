@@ -3,7 +3,7 @@
 https://powerups.thinkific.com/pages/playeah
 v1.2.1
 */
-(function () {
+
     var pops = window._playeah.pops;
     console.log(pops);
     var _playeah_lottie = null;
@@ -815,7 +815,7 @@ v1.2.1
         
         
     
-}());
+
 
 
 
