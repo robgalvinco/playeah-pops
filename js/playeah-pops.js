@@ -138,7 +138,10 @@ v1.2.1
             _playeah_lottie.addEventListener('complete', hide_fs_lottie);
     
             $("#playeah-fs").show();
-            _playeah_lottie.load(pop.lottie);
+	    if (pop.lottie!=""){
+		 _playeah_lottie.load(pop.lottie);
+	    }
+            
             pops[index].played = true;            
         } 
         if(pop.type=="modal"){
