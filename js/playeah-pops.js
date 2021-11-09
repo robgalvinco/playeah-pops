@@ -140,6 +140,8 @@ v1.2.1
             $("#playeah-fs").show();
 	    if (pop.lottie!=""){
 		 _playeah_lottie.load(pop.lottie);
+	    } else {
+		hide_fs_lottie();	    
 	    }
             
             pops[index].played = true;            
