@@ -235,10 +235,10 @@ v1.2.1
             $(".pow-tourcard").addClass("pow-tourcard-bottom-right");
             
         }
-        $(".pow-start-tour-text").removeClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
-        $(".pow-start-tour-icon").removeClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
-        $(".pow-start-tour-text").addClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
-        $(".pow-start-tour-icon").addClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
+        $(".pow-start-tour-text").removeClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
+        $(".pow-start-tour-icon").removeClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
+        $(".pow-start-tour-text").addClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
+        $(".pow-start-tour-icon").addClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
 
         
     }
@@ -249,7 +249,7 @@ v1.2.1
             $(".pow-tourcard").css({ left: chapters_menu.width(), bottom: "initial",top:400});
             clear_caret();
             $(".pow-tourcard").addClass("pow-tourcard-right");
-            $(".course-player__chapters-menu").addClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
+            $(".course-player__chapters-menu").addClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
 
         } else {
             if(!is_drawer_open()){
@@ -259,8 +259,8 @@ v1.2.1
             $(".pow-tourcard").css({ bottom: "initial",top: 130});
             clear_caret();
             $(".pow-tourcard").addClass("pow-tourcard-top");
-            $(".course-player__chapters-menu").removeClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
-            $(".course-player__chapters-menu").addClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
+            $(".course-player__chapters-menu").removeClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
+            $(".course-player__chapters-menu").addClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
         }
 
     }
@@ -279,8 +279,8 @@ v1.2.1
         clear_caret();
        
         $(".pow-tourcard").addClass("pow-tourcard-top");
-        $(footer).removeClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
-        $(footer).addClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
+        $(footer).removeClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
+        $(footer).addClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
 
 
     }
@@ -295,8 +295,8 @@ v1.2.1
                     $(".pow-tourcard").css({ bottom: "initial",top: (dash_link.offset().top - $(document).scrollTop())+50});
                     clear_caret();
                     $(".pow-tourcard").addClass("pow-tourcard-bottom-left");
-                    $(this).removeClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
-                    $(this).addClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
+                    $(this).removeClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
+                    $(this).addClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
             
                 }
             });        
@@ -309,8 +309,8 @@ v1.2.1
             $(".pow-tourcard").css({ bottom: "initial",top: (dash_link.offset().top - $(document).scrollTop())+40});
             clear_caret();
             $(".pow-tourcard").addClass("pow-tourcard-bottom-left");
-            $(".course-progress__dashboard-link").removeClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
-            $(".course-progress__dashboard-link").addClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
+            $(".course-progress__dashboard-link").removeClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
+            $(".course-progress__dashboard-link").addClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
 
 
         }
@@ -330,8 +330,8 @@ v1.2.1
         $(".pow-tourcard").css({ bottom: "initial",top: (search.offset().top - $(document).scrollTop())+80});
         clear_caret();
         $(".pow-tourcard").addClass("pow-tourcard-bottom-left");
-        $(search).removeClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
-        $(search).addClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
+        $(search).removeClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
+        $(search).addClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
     }
     
     const show_progress = function(){
@@ -349,8 +349,8 @@ v1.2.1
         $(".pow-tourcard").css({ bottom: "initial",top: (progress.offset().top - $(document).scrollTop())+40});
         clear_caret();
         $(".pow-tourcard").addClass("pow-tourcard-bottom-left");
-        $('[class^="_course-progress__actions-container"]').removeClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
-        $('[class^="_course-progress__actions-container"]').addClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
+        $('[class^="_course-progress__actions-container"]').removeClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
+        $('[class^="_course-progress__actions-container"]').addClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
     }   
     
     const show_full_screen = function(){
@@ -362,8 +362,8 @@ v1.2.1
             
             clear_caret();
             $(".pow-tourcard").addClass("pow-tourcard-bottom-right");
-            $(full_screen).removeClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
-            $(full_screen).addClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
+            $(full_screen).removeClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
+            $(full_screen).addClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
         }
     }      
         
@@ -375,8 +375,8 @@ v1.2.1
             $(".pow-tourcard").css({ bottom: "initial",top: (toggle.offset().top - $(document).scrollTop())+45});
             clear_caret();
             $(".pow-tourcard").addClass("pow-tourcard-bottom-left");
-            $(".course-player__top-bar__menu-toggle").removeClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
-            $(".course-player__top-bar__menu-toggle").addClass("animate__animated animate__fadeIn animate__slow animate__repeat-1");
+            $(".course-player__top-bar__menu-toggle").removeClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
+            $(".course-player__top-bar__menu-toggle").addClass("animate__animated animate__shakeX animate__slow animate__repeat-1");
 
         }
     }    
