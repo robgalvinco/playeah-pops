@@ -1,4 +1,4 @@
-/* plaYEAH Tour PowerUp For Thinkific v(v1.2.2)
+/* plaYEAH Tour PowerUp For Thinkific v(v1.3.0)
 https://powerups.thinkific.com/pages/playeah
 v1.2.1
 */
@@ -386,10 +386,11 @@ v1.2.1
         if(typeof(CoursePlayerV2) !== 'undefined') {
             inject_uikit();
             inject_animate();
-            inject_html();
+            
 
             CoursePlayerV2.on('hooks:contentDidChange', function(data) {
                 console.log(data);
+                inject_html();
                 if(!started){
                     add_start_tour_button();
                     started = true;
