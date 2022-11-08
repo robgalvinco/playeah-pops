@@ -1,4 +1,4 @@
-/* plaYEAH Tour PowerUp For Thinkific v(v1.3.0)
+/* plaYEAH Tour PowerUp For Thinkific v(v1.3.2)
 https://powerups.thinkific.com/pages/playeah
 v1.2.1
 */
