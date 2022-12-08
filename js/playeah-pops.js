@@ -108,6 +108,7 @@ v1.3.1
         }
 
         // fix positions and width
+	/*
         css +='<style>' ;
         css +='#playeah-pops{width: fit-content;height: fit-content;}';
         css +='#playeah-pops.position-bottom-left{ bottom:0px; top:initial; left:0px; right:initial;}'
@@ -115,15 +116,19 @@ v1.3.1
         css +='#playeah-pops.position-top-left{ bottom:intial; top:0px; left:0px; right:initial;}'
         css +='#playeah-pops.position-top-right{ bottom:intial; top:0px; left:initial; right:0px;}'
         css +='</style>';
+	*/
 
         //load all into container
         $('#playeah-pop-container').html(css+html);
+	/*
         var popupWinWidth = $('#playeah-pops').width();
         var popupWinHeight = $('#playeah-pops').height();
         var left = ((screen.width+popupWinWidth)/2);
         var top = (screen.height/2) - (popupWinHeight / 2);
-        
+        */
+	    
         // add centering classes
+	/*
         css = '<style>';
         css +='#playeah-pops.position-top-center{ bottom:initial; top:0px; left:'+left+'px; right:initial;}'
         css +='#playeah-pops.position-bottom-center{ bottom:0px; top:initial; left:'+left+'px; right:initial;}'
@@ -132,6 +137,7 @@ v1.3.1
         css +='#playeah-pops.position-center-right{ bottom:initial; top:'+top+'px; left:initial; right:25px;}'
         css += '</style>'
         $('#playeah-pop-container').append(css);
+	*/
 
         modalAnimations();
         //open pop
