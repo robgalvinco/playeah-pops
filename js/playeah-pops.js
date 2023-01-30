@@ -230,7 +230,7 @@ v1.3.1
         var f = document.getElementsByTagName("script")[0],
            j = document.createElement("script");
            j.async = false;
-           j.src = "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js";
+           j.src = "https://unpkg.com/@lottiefiles/lottie-player@1.6.0/dist/lottie-player.js";
            f.parentNode.insertBefore(j, f);
     }
 
